@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pom.pageFactory.testRunner.LoginTest_POM">
+        <methods>
+          <include name="UserPositiveTest"/>
+          <include name="LoginNegativeTest"/>
+          <include name="ClickSignInLink"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.LoginTest_POM -->
+      <class name="pom.pageFactory.testRunner.TreeTest_POM">
+        <methods>
+          <include name="Click_TreeOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.TreeTest_POM -->
+      <class name="pom.pageFactory.testRunner.StackTest_POM">
+        <methods>
+          <include name="ClickStackOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.StackTest_POM -->
+      <class name="pom.pageFactory.testRunner.LinkedListTest_POM">
+        <methods>
+          <include name="ClickLinkedListLinkOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.LinkedListTest_POM -->
+      <class name="pom.pageFactory.testRunner.QueueTest_POM">
+        <methods>
+          <include name="ClickQueueOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.QueueTest_POM -->
+      <class name="pom.pageFactory.testRunner.ArrayTest_POM">
+        <methods>
+          <include name="ClickArrayLinkOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.ArrayTest_POM -->
+      <class name="pom.pageFactory.testRunner.GraphTest_POM">
+        <methods>
+          <include name="click_graph_link"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.GraphTest_POM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
