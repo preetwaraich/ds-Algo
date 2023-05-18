@@ -25,7 +25,7 @@ public class DataStructureTest_POM {
 	@BeforeTest
 	public void setupTest() {
 		driver = DriverFactory.getDriverForChrome_MultipleClasses();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 	}
 	
@@ -92,7 +92,7 @@ public class DataStructureTest_POM {
 	public void DataStructureSmokeTest_Dropdown() {
 		dsp = new DataStructurePage(driver);
 		dsp.clickDropDownLink();
-		dsp.selectDropdownValue("Arrays");Sleep.sleep(5000);
+		dsp.selectDropdownValue("Arrays");Sleep.sleep();
 		//dsp.clickSignOutLink();
 	}
 	

@@ -55,40 +55,40 @@ public void homePage_url() {
 	}
 
 public void clickOperationsInStack() {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	operationsInStack.click();
 	
 }
 
 public void clickImplementation() {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	implementation.click();
 }
 public void clickApplications() {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	stackApplications.click();
 	
 }
 
 public void clickTryHere() {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	tryHereButton.click();
 }
 
 public void addCodeInTextArea(String code) {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	textArea.sendKeys(code);
 }
 public void clickRunButton() {
-	Sleep.sleep(2000);
+	Sleep.sleep();
 	runButton.click();
 }
 public void clickPracticeQuestionLink() {
-	Sleep.sleep(3000);
+	Sleep.sleep();
 	praticeQuesLink.click();
 }
 public void clickSignOutLink() {
 	signOut.click();
-	Sleep.sleep(3000);
+	Sleep.sleep();
 }
 }

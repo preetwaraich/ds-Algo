@@ -23,7 +23,7 @@ public class LoginTest_POM {
 	public void setupTest() {
 		driver=DriverFactory.getDriverForBrowser("Chrome");
 		driver.get("https://dsportalapp.herokuapp.com");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 	}
 	

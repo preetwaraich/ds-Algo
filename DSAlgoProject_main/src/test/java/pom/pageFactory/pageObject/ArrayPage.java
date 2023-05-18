@@ -87,26 +87,26 @@ public class ArrayPage {
 	public void clickSignOutLink() {
 
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 	
 	public void clickArraysInPython() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		arraysInPython.click();
 	}
 	
 	public void clickArraysUsingList() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		arraysUsingList.click();
 	}
 	
 	public void clickBasicOperationsInLists() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		basicOperationInList.click();
 	}
 	
 	public void clickApplicationsOfArray() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		applicationOfArray.click();
 	}
 	
@@ -116,56 +116,56 @@ public class ArrayPage {
 	}
 	
 	public void clickTryHere() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 	
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clearCodeInTextArea() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.clear();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickSubmitButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		submitButton.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 	public void clickSearchTheArray() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		searchTheArray.click();
 	}
 	public void clickMaxConsecutiveOnes() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		maxConsecutiveOnes.click();
 	}
 	public void clickFindNumbers() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		findNumbers.click();
 	}
 	public void clickSquareOfASortedArray() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		squareOfArray.click();
 	}
 	public void captureSubmitErrorMessage() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		submitError.getText();
 	}
 		

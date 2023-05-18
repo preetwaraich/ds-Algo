@@ -20,7 +20,7 @@ public class StackTestSuite {
 		driver.get("https://dsportalapp.herokuapp.com");
 		driver.manage().window().maximize();
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Sleep.sleep(4000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
@@ -29,7 +29,7 @@ public class StackTestSuite {
 	public void clickSignIn() {
 		WebElement signInLink = driver.findElement(ById.xpath("//a[contains(text(),'Sign in')]"));
 		signInLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 
 	@Test
@@ -39,71 +39,71 @@ public class StackTestSuite {
 		// TODO get input from Excel
 		usernameTextBox.clear();
 		usernameTextBox.sendKeys("MyNewUser9899");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		WebElement passwordTextBox = driver.findElement(By.id("id_password"));
 		// TODO get input from Excel
 		passwordTextBox.clear();
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		WebElement loginBtn = driver.findElement(By.xpath("//input[@type='submit' and @value='Login']"));
 		loginBtn.click();
 
 		// To Be Removed
 		// driver.get("https://dsportalapp.herokuapp.com/home");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(By.xpath("//a[@href='stack']")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//a[@href='operations-in-stack']")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//a[@href='/tryEditor']")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys("print 'Operations in Stack'");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//button[contains(text(),'Run')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.navigate().back();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.findElement(ById.xpath("//a[contains(text(),'Implementation')]")).click();
 
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//a[contains(text(),'Try here>>>')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys("print 'Implementation'");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//button[contains(text(),'Run')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.navigate().back();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		driver.findElement(ById.xpath("//a[contains(text(),'Applications')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.findElement(ById.xpath("//a[@href='/tryEditor']")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 				
 		driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys("print 'Applications'");
 		
 		driver.findElement(ById.xpath("//button[contains(text(),'Run')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		driver.navigate().back();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 				
 		driver.findElement(ById.xpath("//a[contains(text(),'Practice Questions')]")).click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 	}
 

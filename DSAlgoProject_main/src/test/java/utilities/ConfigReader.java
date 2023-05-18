@@ -82,5 +82,16 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("Browser is  not specified in the config.properties file.");
 	}
+	
+	public static long getSleepTime() {
+		if (prop == null)
+			init_properties();
+
+		String sleep_time= prop.getProperty("sleep_time");// System.out.println(invocation_mode);
+		if (sleep_time != null)
+			return Long.parseLong(sleep_time);
+		else
+			throw new RuntimeException("Sleep time is  not specified in the config.properties file.");
+	}
 
 }

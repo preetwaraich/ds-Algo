@@ -59,9 +59,9 @@ public class RegisterPage {
 	 }
 	 
 	 public void clickRegisterButton() {
-		 Sleep.sleep(2000);
+		 Sleep.sleep();
 		 registerButton.click();
-		 Sleep.sleep(2000);
+		 Sleep.sleep();
 	 }
 
 	 public String getHomePageTitle() {
@@ -69,7 +69,7 @@ public class RegisterPage {
 	 }
 	 
 	 public String getErrorMsg() {
-		 	Sleep.sleep(3000);
+		 	Sleep.sleep();
 			String errorMsg=errorMessage.getText();
 			return errorMsg;
 		}

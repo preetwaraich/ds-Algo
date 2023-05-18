@@ -16,13 +16,13 @@ public class LoginToPortal {
 	@Test
 	public void clickGetStarted() {
 		driver.get("https://dsportalapp.herokuapp.com");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
 	@Test
 	public void clickSignIn() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		
 		WebElement signInLink = driver.findElement(ById.xpath("//a[contains(text(),'Sign in')]"));
 		signInLink.click();
@@ -30,7 +30,7 @@ public class LoginToPortal {
 	}
 	@Test
 	public void loginUserNegativeTest() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.sendKeys("Login1234");
@@ -38,16 +38,16 @@ public class LoginToPortal {
 		WebElement passwordTextBox = driver.findElement(By.name("password"));
 		//TODO get input from Excel
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement loginBtn = driver.findElement(By.xpath("//input[@type='submit' and @value='Login']"));
 		loginBtn.click();
 	}
 		
 	@Test
 	public void loginUserPositiveTest() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.clear();
@@ -57,7 +57,7 @@ public class LoginToPortal {
 		//TODO get input from Excel
 		passwordTextBox.clear();
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement loginBtn = driver.findElement(By.xpath("//input[@type='submit' and @value='Login']"));
 		loginBtn.click();
 	}

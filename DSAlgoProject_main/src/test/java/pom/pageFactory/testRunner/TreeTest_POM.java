@@ -28,7 +28,7 @@ public class TreeTest_POM {
 	@BeforeTest
 	public void setupTest() {
 		driver = DriverFactory.getDriverForChrome_MultipleClasses();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 	}
 
@@ -77,7 +77,7 @@ public class TreeTest_POM {
 	public void click_OverviewOfTrees() {
 		tp = new TreePage(driver);
 		tp.clickOverviewOfTrees();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Overview of Trees'");
 		tp.clickRunButton();
@@ -88,7 +88,7 @@ public class TreeTest_POM {
 	public void click_Terminolgies() {
 		tp = new TreePage(driver);
 		tp.clickTerminologies();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Terminologies'");
 		tp.clickRunButton();
@@ -99,7 +99,7 @@ public class TreeTest_POM {
 	public void click_TypesOfTrees() {
 		tp = new TreePage(driver);
 		tp.clickTypesOfTrees();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Types of Trees'");
 		tp.clickRunButton();
@@ -110,7 +110,6 @@ public class TreeTest_POM {
 	public void click_TreeTraversals() {
 		tp = new TreePage(driver);
 		tp.clickTreeTraversals();
-		Sleep.sleep(0);
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Tree Traversals'");
 		tp.clickRunButton();
@@ -121,7 +120,7 @@ public class TreeTest_POM {
 	public void click_TraversalIllustration() {
 		tp = new TreePage(driver);
 		tp.clickTraversalIllustration();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Traversals Illustration'");
 		tp.clickRunButton();
@@ -132,7 +131,7 @@ public class TreeTest_POM {
 	public void click_TypesOfBinaryTrees() {
 		tp = new TreePage(driver);
 		tp.clickTypesOfBinaryTrees();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Types Of Binary Trees'");
 		tp.clickRunButton();
@@ -143,7 +142,7 @@ public class TreeTest_POM {
 	public void click_ImpInPython() {
 		tp = new TreePage(driver);
 		tp.clickImpInPython();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Implementation In Python'");
 		tp.clickRunButton();
@@ -153,7 +152,7 @@ public class TreeTest_POM {
 	public void click_BinaryTreeTravesals() {
 		tp = new TreePage(driver);
 		tp.clickBinaryTreeTravesals();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Tree Travesals'");
 		tp.clickRunButton();
@@ -163,7 +162,7 @@ public class TreeTest_POM {
 	public void click_ImpOfBinaryTrees() {
 		tp = new TreePage(driver);
 		tp.clickImpOfBinaryTrees();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Binary Trees'");
 		tp.clickRunButton();
@@ -173,7 +172,7 @@ public class TreeTest_POM {
 	public void click_AppOfBinaryTrees() {
 		tp = new TreePage(driver);
 		tp.clickAppOfBinaryTrees();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Applications of Binary Trees'");
 		tp.clickRunButton();
@@ -184,7 +183,7 @@ public class TreeTest_POM {
 	public void click_BinarySearchTrees() {
 		tp = new TreePage(driver);
 		tp.clickBinarySearchTrees();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Binary Search Trees'");
 		tp.clickRunButton();
@@ -195,7 +194,7 @@ public class TreeTest_POM {
 		tp = new TreePage(driver);
 		tp.clickBinarySearchTrees();
 		tp.clickImpOfBST();
-		Sleep.sleep(0);
+		Sleep.sleep();
 		tp.clickTryHere();
 		tp.addCodeInTextArea("print 'I am in Implementation of BST Module'");
 		tp.clickRunButton();
@@ -206,7 +205,7 @@ public class TreeTest_POM {
 	public void tree_PracticeQuestionsLink() {
 		tp = new TreePage(driver);
 		tp.clickPracticeQuestionLink();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	@Test(groups = { "Smoke", "Page" }, priority = 33)

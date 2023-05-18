@@ -26,7 +26,7 @@ public class GetStartedPage_Element {
 	 public void clickGetStarted_btn() {
 
 		 getStarted.click();
-		 Sleep.sleep(3000);
+		 Sleep.sleep();
 	 }
 
 	 public String getHomePageTitle() {

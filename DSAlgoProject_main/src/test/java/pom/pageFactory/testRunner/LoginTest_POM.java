@@ -21,7 +21,7 @@ public class LoginTest_POM {
 	@BeforeTest
 	public void setupTest() {
 		driver=DriverFactory.getDriverForChrome_MultipleClasses();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 	}
 	

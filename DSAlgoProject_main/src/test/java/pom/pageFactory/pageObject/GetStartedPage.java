@@ -29,7 +29,7 @@ public class GetStartedPage {
 	 }
 	 
 	 public void clickGetStarted_btn() {
-		 Sleep.sleep(2000);
+		 Sleep.sleep();
 	  getStartedBtn.click();
 
 	 }

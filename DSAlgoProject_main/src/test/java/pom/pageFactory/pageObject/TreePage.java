@@ -96,92 +96,92 @@ public class TreePage {
 	}
 
 	public void clickOverviewOfTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		overview.click();
 	}
 
 	public void clickTerminologies() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		terminologies.click();
 	}
 
 	public void clickTypesOfTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		typesOfTrees.click();
 	}
 
 	public void clickTreeTraversals() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		treeTraversals.click();
 	}
 
 	public void clickTraversalIllustration() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		traversalIllustration.click();
 	}
 
 	public void clickBinaryTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		binaryTrees.click();
 	}
 
 	public void clickTypesOfBinaryTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		typesOfBinaryTrees.click();
 	}
 
 	public void clickImpInPython() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementationInPython.click();
 	}
 
 	public void clickBinaryTreeTravesals() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		binaryTreeTraversals.click();
 	}
 
 	public void clickImpOfBinaryTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementationOfBinaryTrees.click();
 	}
 
 	public void clickAppOfBinaryTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		applicationsOfBinaryTrees.click();
 	}
 
 	public void clickBinarySearchTrees() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		binarySearchTrees.click();
 	}
 
 	public void clickImpOfBST() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementationOfBst.click();
 	}
 
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
 	}
 	
 	public void clickTryHere() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
 	}
 
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 
 	public void clickSignOutLink() {
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 }

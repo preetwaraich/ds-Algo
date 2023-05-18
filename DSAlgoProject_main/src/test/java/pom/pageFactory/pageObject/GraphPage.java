@@ -53,12 +53,12 @@ public class GraphPage {
 	}
 
 	public void clickGraph() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		graph.click();
 	}
 	
 	public void clickGraphRrepsentations() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		graphRepresentations.click();
 	}
 	
@@ -68,35 +68,35 @@ public class GraphPage {
 	}
 	
 	public void clickTryHere() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 	
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clearCodeInTextArea() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.clear();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 	public void clickSignOutLink() {
 
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 }

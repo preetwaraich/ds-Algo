@@ -103,7 +103,7 @@ public class HomePage {
 
 	public void selectDropdownValue(String strItem) {
 
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		switch (strItem) {
 
@@ -173,11 +173,11 @@ public class HomePage {
 
 
 	public void clickSignInLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		signin.click();
 	}
 	public void clickSignOutLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		signOut.click();
 	}
 
@@ -186,7 +186,7 @@ public class HomePage {
 		return lptitle;
 	}
 	public void clickRegister() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		register.click();
 	}
 

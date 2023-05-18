@@ -61,47 +61,47 @@ public class QueuePage {
 	}
 
 	public void clickImplementationQueue() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implemenationQueue.click();
 
 	}
 
 	public void clickImplementationCollections() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementationCollections.click();
 	}
 
 	public void clickImplementationArray() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementationArray.click();
 	}
 	
 	public void clickQeueuOps() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		queueOps.click();
 	}
 	public void clickTryHere() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
 	}
 
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
 	}
 
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 
 	public void clickSignOutLink() {
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 }

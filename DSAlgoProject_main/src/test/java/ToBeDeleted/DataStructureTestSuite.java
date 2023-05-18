@@ -18,13 +18,13 @@ public class DataStructureTestSuite {
 	public void clickGetStarted() {
 		driver.get("https://dsportalapp.herokuapp.com");
 		driver.manage().window().maximize();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
 	@Test
 	public void clickSignIn() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		
 		WebElement signInLink = driver.findElement(ById.xpath("//a[contains(text(),'Sign in')]"));
 		signInLink.click();
@@ -32,7 +32,7 @@ public class DataStructureTestSuite {
 	}
 	@Test
 	public void loginUserPositiveTest() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.clear();
@@ -42,7 +42,7 @@ public class DataStructureTestSuite {
 		//TODO get input from Excel
 		passwordTextBox.clear();
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement loginBtn = driver.findElement(By.xpath("//input[@type='submit' and @value='Login']"));
 		loginBtn.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
@@ -52,7 +52,7 @@ public class DataStructureTestSuite {
 
 		WebElement dsGetStartedLink = driver.findElement(By.xpath("//a[@href='data-structures-introduction']"));
 		dsGetStartedLink.click();
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement timeCompplexityLink = driver.findElement(ById.xpath("//a[contains(text(),'Time Complexity')]"));
 		timeCompplexityLink.click();
 		
@@ -95,7 +95,7 @@ public class DataStructureTestSuite {
 	
 	@Test
 	public void clickTimeComplexity() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement timeCompplexityLink = driver.findElement(ById.xpath("//a[contains(text(),'Time Complexity')]"));
 		timeCompplexityLink.click();
 		
@@ -103,7 +103,7 @@ public class DataStructureTestSuite {
 	/*
 	@Test
 	public void clickTryHere() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement tryHereBtn = driver.findElement(ById.xpath("//a[contains(text(),'Try here>>>')]"));
 		tryHereBtn.click();
 		

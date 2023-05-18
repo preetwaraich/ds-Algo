@@ -29,7 +29,7 @@ public class QueueTest_POM {
 	@BeforeTest
 	public void setupTest() {
 		driver = DriverFactory.getDriverForChrome_MultipleClasses();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 	}
 
@@ -78,11 +78,11 @@ public class QueueTest_POM {
 	public void clickImplementationQueue() {
 		qup = new QueuePage(driver);
 		qup.clickImplementationQueue();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'I am in implementation of queue in python module'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 	}
 	@Test(groups = { "Smoke", "Page" }, priority = 11)
@@ -92,7 +92,7 @@ public class QueueTest_POM {
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'I am in Implementation Collections Module'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 	}
 	@Test(groups = { "Smoke", "Page" }, priority = 13)
@@ -102,7 +102,7 @@ public class QueueTest_POM {
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'I am in Implementation of Array Module'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 	}
 	@Test(groups = { "Smoke", "Page" }, priority = 15)
@@ -112,7 +112,7 @@ public class QueueTest_POM {
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'I am in Queue Operations Module'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 		
 	}
@@ -120,7 +120,7 @@ public class QueueTest_POM {
 	public void queue_PracticeQuestionsLink() {
 		qup = new QueuePage(driver);
 		qup.clickPracticeQuestionLink();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	@Test(groups = { "Smoke", "Page" }, priority = 17)

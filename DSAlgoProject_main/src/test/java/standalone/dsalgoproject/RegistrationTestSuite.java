@@ -16,13 +16,13 @@ public class RegistrationTestSuite {
 	@Test
 	public void clickGetStarted() {
 		driver.get("https://dsportalapp.herokuapp.com");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
 	@Test
 	public void clickSignIn() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement registerLink = driver.findElement(ById.xpath("//a[contains(text(),'Register')]"));
 		registerLink.click();
 		
@@ -30,7 +30,7 @@ public class RegistrationTestSuite {
 	
 	@Test
 	public void registerUserError() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.sendKeys("Login1234");
@@ -38,18 +38,18 @@ public class RegistrationTestSuite {
 		WebElement passwordTextBox = driver.findElement(By.name("password1"));
 		//TODO get input from Excel
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement confirmPasswordTextBox = driver.findElement(By.id("id_password2"));
 		//TODO get input from Excel
 		confirmPasswordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement registerButton = driver.findElement(By.xpath("//input[@type='submit' and @value='Register']"));
 		registerButton.click();
 	}
 	
 	@Test
 	public void registerUser() {
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.clear();
@@ -59,12 +59,12 @@ public class RegistrationTestSuite {
 		//TODO get input from Excel
 		passwordTextBox.clear();
 		passwordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement confirmPasswordTextBox = driver.findElement(By.id("id_password2"));
 		//TODO get input from Excel
 		confirmPasswordTextBox.clear();
 		confirmPasswordTextBox.sendKeys("Login1234");
-		Sleep.sleep(1000);
+		Sleep.sleep();
 		WebElement registerButton = driver.findElement(By.xpath("//input[@type='submit' and @value='Register']"));
 		registerButton.click();
 	}

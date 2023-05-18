@@ -27,7 +27,7 @@ public class LoginTest_POM {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
 		driver.get("https://dsportalapp.herokuapp.com");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 	}
 	

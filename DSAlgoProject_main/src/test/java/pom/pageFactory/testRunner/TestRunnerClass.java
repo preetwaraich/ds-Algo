@@ -186,11 +186,11 @@ public class TestRunnerClass {
 		lp.clickTryHere();
 		lp.addCodeInTextArea("print Wrong code");
 		lp.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		String errorMessage = driver.switchTo().alert().getText();
 		System.out.println(errorMessage);
 		driver.switchTo().alert().accept();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		// driver.switchTo().window(windowHandle);
 		// ap.clearCodeInTextArea();
 		// TODO fix this
@@ -257,7 +257,7 @@ public class TestRunnerClass {
 		sp = new StackPage(driver);
 
 		sp.clickOperationsInStack();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		sp.clickTryHere();
 		sp.addCodeInTextArea("print 'I am in Operations Im Stack'");
 		sp.clickRunButton();
@@ -286,32 +286,32 @@ public class TestRunnerClass {
 		qup = new QueuePage(driver);
 
 		qup.clickImplementationQueue();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'I am in implementation of queue in python'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 
 		qup.clickImplementationCollections();
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'Hello'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 
 		qup.clickImplementationArray();
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'Hello'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 
 		qup.clickQeueuOps();
 		qup.clickTryHere();
 		qup.addCodeInTextArea("print 'Numpy Ninja'");
 		qup.clickRunButton();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
 
 		qup.clickPracticeQuestionLink();

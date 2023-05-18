@@ -62,7 +62,7 @@ public class SignInPage {
 	 }
 	 
 	 public void clickLogin() {
-		 Sleep.sleep(3000);
+		 Sleep.sleep();
 		 loginButton.click();
 	 }
 
@@ -71,7 +71,7 @@ public class SignInPage {
 	 }
 	 
 	 public String getErrorMsg() {
-		 	Sleep.sleep(3000);
+		 	Sleep.sleep();
 			String errorMsg=errorMessage.getText();
 			return errorMsg;
 		}

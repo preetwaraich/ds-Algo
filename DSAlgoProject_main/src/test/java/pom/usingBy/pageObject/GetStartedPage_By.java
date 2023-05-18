@@ -25,7 +25,7 @@ public class GetStartedPage_By {
 	 public void clickGetstarted_btn() {
 		 
 	 driver.findElement(getStartedBtn).click();
-	 Sleep.sleep(3000);
+	 Sleep.sleep();
 	 }
 
 	 public String getHomePageTitle() {

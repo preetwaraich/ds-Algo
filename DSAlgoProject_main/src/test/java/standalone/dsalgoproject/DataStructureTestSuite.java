@@ -20,7 +20,7 @@ public class DataStructureTestSuite {
 		driver.get("https://dsportalapp.herokuapp.com");
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
@@ -28,7 +28,7 @@ public class DataStructureTestSuite {
 	public void clickSignIn() {
 		WebElement signInLink = driver.findElement(ById.xpath("//a[contains(text(),'Sign in')]"));
 		signInLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	@Test
 	public void loginUserPositiveTest() {
@@ -48,15 +48,15 @@ public class DataStructureTestSuite {
 		
 		//To Be Removed
 		//driver.get("https://dsportalapp.herokuapp.com/home");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		WebElement dsGetStartedLink = driver.findElement(By.xpath("//a[@href='data-structures-introduction']"));
 		dsGetStartedLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	
 		WebElement timeCompplexityLink = driver.findElement(ById.xpath("//a[contains(text(),'Time Complexity')]"));
 		timeCompplexityLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		
 		WebElement tryHereBtn = driver.findElement(ById.xpath("//a[contains(text(),'Try here>>>')]"));
 		tryHereBtn.click();
@@ -64,18 +64,18 @@ public class DataStructureTestSuite {
 		//WebElement codetextArea = driver.findElement(By.xpath("//div[@class='CodeMirror-scroll']"));
 		//codetextArea.sendKeys("print 'Hello'");
 		driver.findElement(By.xpath("//form[@id='answer_form']/div/div/div/textarea")).sendKeys("print 'hello'");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement runButton = driver.findElement(ById.xpath("//button[contains(text(),'Run')]"));
 		runButton.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		driver.navigate().back();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement practiceQuesLink = driver.findElement(ById.xpath("//a[contains(text(),'Practice Questions')]"));
 		practiceQuesLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement nnLink = driver.findElement(ById.xpath("//a[contains(text(),'NumpyNinja')]"));
 		nnLink.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 		
@@ -83,7 +83,7 @@ public class DataStructureTestSuite {
 		//WebElement dsDropdown = driver.findElement(ById.xpath("//a[@class='nav-link dropdown-toggle']")); 
 		dsDropdown.click();
 		
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement signOutLink = driver.findElement(ById.xpath("//a[contains(text(),'Sign out')]"));
 		signOutLink.click();
 		

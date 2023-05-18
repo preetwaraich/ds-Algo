@@ -20,11 +20,11 @@ public class TestSuite_ToBeDeleted {
 
 		// open url on the browser
 		//driver.get("https://dsportalapp.herokuapp.com");
-		//Sleep.sleep(2000);
+		//Sleep.sleep();
 
 		//WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		//getStarted.click();
-		Sleep.sleep(5000);
+		Sleep.sleep();
 		WebElement registerLink = driver.findElement(ById.xpath("//a[contains(text(),'Register')]"));
 		registerLink.click();
 
@@ -33,13 +33,13 @@ public class TestSuite_ToBeDeleted {
 	@Test
 	public void clickGetStarted() {
 		driver.get("https://dsportalapp.herokuapp.com");
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
 	@Test
 	public void clickRegister() {
-		Sleep.sleep(4000);
+		Sleep.sleep();
 		WebElement registerLink = driver.findElement(By.xpath("//input[@type='submit' and @value='Register']"));
 		registerLink.click();
 		

@@ -81,7 +81,7 @@ public class DataStructurePage {
 	//Actions or Methods
 
 	public void clickDropDownLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		dropDownLink.click();
 
 	}
@@ -93,7 +93,7 @@ public class DataStructurePage {
 
 	public void selectDropdownValue(String strItem) {
 
-		Sleep.sleep(2000);
+		Sleep.sleep();
 
 		switch (strItem) {
 
@@ -131,18 +131,18 @@ public class DataStructurePage {
 
 
 	public String errorMsg() throws Exception {
-		Thread.sleep(1000);
+		Sleep.sleep();
 		String errorMsg=errorMessage.getText();
 		return errorMsg;
 	}
 	public void clickSignOutLink() {
 
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 
 	public void clickTimeComplexity() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		timeComplexity.click();
 	}
 	public String getDataStructurePageTitle() {
@@ -151,24 +151,24 @@ public class DataStructurePage {
 	}
 	
 	public void clickTryHere() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 	
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
-		Sleep.sleep(2000);
+		Sleep.sleep();
 	}
 	
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 }

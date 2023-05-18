@@ -76,65 +76,65 @@ public class LinkedListPage {
 	}
 
 	public void clickIntroduction() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		introduction.click();
 	}
 	public void clickCreateLinkedList() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		createLinkedList.click();
 	}
 	public void clickTypesOfLinkedList() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		typesOfLinkedList.click();
 	}
 
 	public void clickImplementLLInPython() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		implementLinkedListInPython.click();
 	}
 	
 	public void clickTraversal() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		traversal.click();
 	}
 
 	public void clickInsertion() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		insertionInLinkedList.click();
 	}
 
 	public void clickDeletion() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		deletionInLinkedList.click();
 	}
 	
 	public void clickTryHere() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		tryHereButton.click();
 	}
 
 	public void addCodeInTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		textArea.sendKeys(code);
 	}
 	
 	public void addCodeInAnotherTextArea(String code) {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		anotherTextArea.sendKeys(code);
 	}
 
 	public void clickRunButton() {
-		Sleep.sleep(2000);
+		Sleep.sleep();
 		runButton.click();
 	}
 
 	public void clickPracticeQuestionLink() {
-		Sleep.sleep(3000);
+		Sleep.sleep();
 		praticeQuesLink.click();
 	}
 
 	public void clickSignOutLink() {
 		signOut.click();
-		Sleep.sleep(3000);
+		Sleep.sleep();
 	}
 }
