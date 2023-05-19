@@ -8,6 +8,14 @@
       </run>
     </groups>
     <classes>
+      <class name="pom.pageFactory.testRunner.DataStructureTest_POM">
+        <methods>
+          <include name="DataStructureSmokeTest_TimeComplexity"/>
+          <include name="DataStructureSmokeTest_Dropdown"/>
+          <include name="DataStructureSmokeTest_PracticeQuestion"/>
+          <include name="ClickDSLinkOnHomePage"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.DataStructureTest_POM -->
       <class name="pom.pageFactory.testRunner.LoginTest_POM">
         <methods>
           <include name="UserPositiveTest"/>
@@ -17,34 +25,90 @@
       </class> <!-- pom.pageFactory.testRunner.LoginTest_POM -->
       <class name="pom.pageFactory.testRunner.TreeTest_POM">
         <methods>
-          <include name="Click_TreeOnHomePage"/>
+          <include name="click_ImpInPython"/>
+          <include name="click_TypesOfTrees"/>
+          <include name="click_TypesOfBinaryTrees"/>
+          <include name="click_OverviewOfTrees"/>
+          <include name="click_Terminolgies"/>
+          <include name="tree_Dropdown"/>
+          <include name="click_ImpOfBinaryTrees"/>
+          <include name="click_BinarySearchTrees"/>
+          <include name="click_TraversalIllustration"/>
+          <include name="click_BinaryTreeTravesals"/>
+          <include name="click_AppOfBinaryTrees"/>
+          <include name="click_ImpOfBST"/>
+          <include name="click_TreeTraversals"/>
+          <include name="tree_PracticeQuestionsLink"/>
         </methods>
       </class> <!-- pom.pageFactory.testRunner.TreeTest_POM -->
       <class name="pom.pageFactory.testRunner.StackTest_POM">
         <methods>
-          <include name="ClickStackOnHomePage"/>
+          <include name="stack_PracticeQuestionsLink"/>
+          <include name="stack_DropDown"/>
+          <include name="implementation_stack"/>
+          <include name="application_stack"/>
+          <include name="operations_in_stack"/>
         </methods>
       </class> <!-- pom.pageFactory.testRunner.StackTest_POM -->
-      <class name="pom.pageFactory.testRunner.LinkedListTest_POM">
-        <methods>
-          <include name="ClickLinkedListLinkOnHomePage"/>
-        </methods>
-      </class> <!-- pom.pageFactory.testRunner.LinkedListTest_POM -->
-      <class name="pom.pageFactory.testRunner.QueueTest_POM">
-        <methods>
-          <include name="ClickQueueOnHomePage"/>
-        </methods>
-      </class> <!-- pom.pageFactory.testRunner.QueueTest_POM -->
       <class name="pom.pageFactory.testRunner.ArrayTest_POM">
         <methods>
-          <include name="ClickArrayLinkOnHomePage"/>
+          <include name="ArrayPage_ArraysUsingList"/>
+          <include name="ArrayPage_PracticeQuestion3"/>
+          <include name="ArrayPage_PracticeQuestion2"/>
+          <include name="ArrayPage_DropDown_LL"/>
+          <include name="ArrayPage_PracticeQuestion4"/>
+          <include name="ArrayPage_BasicOperations"/>
+          <include name="ArrayPage_PracticeQuestionsLink"/>
+          <include name="ArrayPage_ArraysInPython"/>
+          <include name="ArrayPage_WrongInput"/>
+          <include name="ArrayPage_ApplicationsOfArrays"/>
+          <include name="ArrayPage_PracticeQuestion1"/>
         </methods>
       </class> <!-- pom.pageFactory.testRunner.ArrayTest_POM -->
+      <class name="pom.pageFactory.testRunner.RegistrationTest_POM">
+        <methods>
+          <include name="ClickGetStarted"/>
+          <include name="registerUserNegativeTest"/>
+          <include name="ClickSignOutLink"/>
+          <include name="ClickRegisterLink"/>
+          <include name="LoadAppHome"/>
+          <include name="OpenHomeURL"/>
+          <include name="registerUserPositiveTest"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.RegistrationTest_POM -->
       <class name="pom.pageFactory.testRunner.GraphTest_POM">
         <methods>
+          <include name="click_graph_representation"/>
+          <include name="click_graph_practice_questions"/>
+          <include name="graphPage_ClickSignOut"/>
           <include name="click_graph_link"/>
+          <include name="closeDriver"/>
+          <include name="click_graphLink_wrongText"/>
         </methods>
       </class> <!-- pom.pageFactory.testRunner.GraphTest_POM -->
+      <class name="pom.pageFactory.testRunner.QueueTest_POM">
+        <methods>
+          <include name="clickQueueOperations"/>
+          <include name="clickImplementationArray"/>
+          <include name="clickImplementationCollections"/>
+          <include name="queue_Dropdown"/>
+          <include name="clickImplementationQueue"/>
+          <include name="queue_PracticeQuestionsLink"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.QueueTest_POM -->
+      <class name="pom.pageFactory.testRunner.LinkedListTest_POM">
+        <methods>
+          <include name="deletion"/>
+          <include name="create_LinkedList"/>
+          <include name="LinkedList_PracticeQuestionsLink"/>
+          <include name="implementLLInPython"/>
+          <include name="introduction"/>
+          <include name="LinkedList_DropDown_LL"/>
+          <include name="insertion"/>
+          <include name="traversal"/>
+          <include name="typeOfLinkedList"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.LinkedListTest_POM -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
