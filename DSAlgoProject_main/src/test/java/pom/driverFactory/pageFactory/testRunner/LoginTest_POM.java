@@ -21,13 +21,13 @@ public class LoginTest_POM {
 
 	@BeforeTest
 	public void setupTest() {
-		driver=DriverFactory.getDriverForBrowser("Chrome");
+		driver=DriverFactory.getDriverForBrowser("Edge");
 		driver.get("https://dsportalapp.herokuapp.com");
 		Sleep.sleep();
 		
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void LoginNegativeTest() {
 		gsp = new GetStartedPage(driver);
 		hp = new HomePage(driver);
@@ -42,7 +42,7 @@ public class LoginTest_POM {
 
 	
 		
-	@Test
+	@Test(priority = 2)
 	public void UserPositiveTest() {
 
 		driver.get("https://dsportalapp.herokuapp.com");
@@ -59,7 +59,6 @@ public class LoginTest_POM {
 	
 	@AfterTest
 	public void closeDriver() {
-		driver.close();
 		driver.quit();
 	}
 

@@ -1,26 +1,31 @@
 package pom.driverFactory.pageFactory.testRunner;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ById;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
+import pom.driverFactory.DriverFactory;
 import utilities.Sleep;
 
 public class RegistrationTest_POM {
 	
-	private static WebDriver driver = new ChromeDriver();
+	private static WebDriver driver;
 
-	@Test
+	@Test(priority = 1)
 	public void clickGetStarted() {
+		driver=DriverFactory.getDriverForBrowser("Firefox");
 		driver.get("https://dsportalapp.herokuapp.com");
 		Sleep.sleep();
 		WebElement getStarted = driver.findElement(ById.xpath("//button[contains(text(),'Get Started')]"));
 		getStarted.click();
 	}
-	@Test
+	
+	@Test(priority = 2)
 	public void clickSignIn() {
 		Sleep.sleep();
 		WebElement registerLink = driver.findElement(ById.xpath("//a[contains(text(),'Register')]"));
@@ -28,7 +33,7 @@ public class RegistrationTest_POM {
 		
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void registerUserError() {
 		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
@@ -47,13 +52,13 @@ public class RegistrationTest_POM {
 		registerButton.click();
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void registerUser() {
 		Sleep.sleep();
 		WebElement usernameTextBox = driver.findElement(By.name("username"));
 		//TODO get input from Excel
 		usernameTextBox.clear();
-		usernameTextBox.sendKeys("MyNewUser9899");
+		usernameTextBox.sendKeys(RandomStringUtils.random(8, true, true));
 		
 		WebElement passwordTextBox = driver.findElement(By.name("password1"));
 		//TODO get input from Excel
@@ -70,6 +75,9 @@ public class RegistrationTest_POM {
 	}
 	
 	
-	
+	@AfterTest
+	public void closeDriver() {
+		driver.quit();
+	}
 
 }
