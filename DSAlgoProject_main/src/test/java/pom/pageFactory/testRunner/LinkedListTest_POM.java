@@ -14,6 +14,7 @@ import pom.pageFactory.pageObject.GetStartedPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.LinkedListPage;
 import pom.pageFactory.pageObject.SignInPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class LinkedListTest_POM {
@@ -40,7 +41,7 @@ public class LinkedListTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -61,8 +62,8 @@ public class LinkedListTest_POM {
 	public void LoginUser() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -78,7 +79,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickIntroduction();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in LL Introduction'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_introduction_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -88,7 +89,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickCreateLinkedList();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Creating Linked List Module'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_create_LinkedList_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -98,7 +99,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickTypesOfLinkedList();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Types of Linked List Module'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_typeOfLinkedList_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -108,7 +109,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickImplementLLInPython();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Implement Linked List in Python'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_implementLLInPython_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -118,7 +119,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickTraversal();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Traversal Module'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_traversal_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -128,7 +129,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickInsertion();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Insertion Module'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_insertion_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -138,7 +139,7 @@ public class LinkedListTest_POM {
 		lp = new LinkedListPage(driver);
 		lp.clickDeletion();
 		lp.clickTryHere();
-		lp.addCodeInTextArea("print 'I am in Deletion Module'");
+		lp.addCodeInTextArea(ConfigReader.getStringValue("LinkedListPage_deletion_PythonCode"));
 		lp.clickRunButton();
 		driver.navigate().back();
 	}

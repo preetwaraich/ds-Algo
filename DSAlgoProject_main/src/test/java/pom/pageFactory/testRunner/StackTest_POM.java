@@ -15,6 +15,7 @@ import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.LinkedListPage;
 import pom.pageFactory.pageObject.SignInPage;
 import pom.pageFactory.pageObject.StackPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class StackTest_POM {
@@ -41,7 +42,7 @@ public class StackTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -62,8 +63,8 @@ public class StackTest_POM {
 	public void LoginUser() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -79,7 +80,7 @@ public class StackTest_POM {
 		sp = new StackPage(driver);
 		sp.clickOperationsInStack();
 		sp.clickTryHere();
-		sp.addCodeInTextArea("print 'I am in Operations in Stack Module'");
+		sp.addCodeInTextArea(ConfigReader.getStringValue("StackPage_operations_in_stack_PythonCode"));
 		sp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -89,7 +90,7 @@ public class StackTest_POM {
 		sp = new StackPage(driver);
 		sp.clickImplementation();
 		sp.clickTryHere();
-		sp.addCodeInTextArea("print 'I am in Implementation Module'");
+		sp.addCodeInTextArea(ConfigReader.getStringValue("StackPage_implementation_stack_PythonCode"));
 		sp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -99,7 +100,7 @@ public class StackTest_POM {
 		sp = new StackPage(driver);
 		sp.clickApplications();
 		sp.clickTryHere();
-		sp.addCodeInTextArea("print 'I am in Applications Module'");
+		sp.addCodeInTextArea(ConfigReader.getStringValue("StackPage_application_stack_PythonCode"));
 		sp.clickRunButton();
 		driver.navigate().back();
 	}

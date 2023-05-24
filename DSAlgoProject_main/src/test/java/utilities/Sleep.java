@@ -3,9 +3,9 @@ package utilities;
 public class Sleep {
 
 	public static void sleep() {
-		if(ConfigReader.getInvocationMode().equalsIgnoreCase("demo")) {
+		if(ConfigReader.getStringValue("invocation_mode").equalsIgnoreCase("demo")) {
 		try {
-			long ms = ConfigReader.getSleepTime();
+			long ms = ConfigReader.getLongValue("sleep_time");
 			Thread.sleep(ms);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

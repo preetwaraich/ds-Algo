@@ -12,6 +12,7 @@ import pom.pageFactory.pageObject.DataStructurePage;
 import pom.pageFactory.pageObject.GetStartedPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.SignInPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class DataStructureTest_POM {
@@ -37,7 +38,7 @@ public class DataStructureTest_POM {
 	
 	@Test(groups= {"Page"},priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 	
 	
@@ -60,8 +61,8 @@ public class DataStructureTest_POM {
 	public void LoginUser() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 	
@@ -77,7 +78,7 @@ public class DataStructureTest_POM {
 		dsp = new DataStructurePage(driver);
 		dsp.clickTimeComplexity();
 		dsp.clickTryHere();
-		dsp.addCodeInTextArea("print 'I am in Data Structures'");
+		dsp.addCodeInTextArea(ConfigReader.getStringValue("dsPage_timeComplexity_PythonCode"));
 		dsp.clickRunButton();
 		driver.navigate().back();
 	}

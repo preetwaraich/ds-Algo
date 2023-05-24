@@ -15,6 +15,7 @@ import pom.pageFactory.pageObject.GraphPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.SignInPage;
 import pom.pageFactory.pageObject.TreePage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class GraphTest_POM {
@@ -41,7 +42,7 @@ public class GraphTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -62,8 +63,8 @@ public class GraphTest_POM {
 	public void Login_User() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -77,7 +78,7 @@ public class GraphTest_POM {
 		gp = new GraphPage(driver);
 		gp.clickGraph();
 		gp.clickTryHere();
-		gp.addCodeInTextArea("print WrongTestInGraph");
+		gp.addCodeInTextArea(ConfigReader.getStringValue("GraphPage_WrongTest_PythonCode"));
 		gp.clickRunButton();
 		String errorMessage=driver.switchTo().alert().getText();
 		System.out.println(errorMessage);
@@ -94,7 +95,7 @@ public class GraphTest_POM {
 		gp = new GraphPage(driver);
 		gp.clickGraph();
 		gp.clickTryHere();
-		gp.addCodeInTextArea("print 'I am in Graph'");
+		gp.addCodeInTextArea(ConfigReader.getStringValue("GraphPage_graph_link_PythonCode"));
 		gp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -106,7 +107,7 @@ public class GraphTest_POM {
 		gp = new GraphPage(driver);
 		gp.clickGraphRrepsentations();
 		gp.clickTryHere();
-		gp.addCodeInTextArea("print 'I am in Graph Representations'");
+		gp.addCodeInTextArea(ConfigReader.getStringValue("GraphPage_graph_representation_PythonCode"));
 		gp.clickRunButton();
 		driver.navigate().back();
 		

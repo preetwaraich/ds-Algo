@@ -9,6 +9,7 @@ import pom.driverFactory.DriverFactory;
 import pom.pageFactory.pageObject.GetStartedPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.SignInPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class LoginTest_POM {
@@ -33,7 +34,7 @@ public class LoginTest_POM {
 	
 	@Test(groups= {"Page"},priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups= {"Page"},priority = 3)
@@ -53,8 +54,8 @@ public class LoginTest_POM {
 	@Test(groups= {"Smoke","Page"},priority = 5)
 	public void LoginNegativeTest() {
 		sip = new SignInPage(driver);
-		sip.enterUsername("Login1234");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("wrong_user_name"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 
 		System.out.println(sip.getErrorMsg());
@@ -66,8 +67,8 @@ public class LoginTest_POM {
 	public void UserPositiveTest() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 

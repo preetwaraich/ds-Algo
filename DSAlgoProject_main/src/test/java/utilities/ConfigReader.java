@@ -31,17 +31,7 @@ public class ConfigReader {
 		return prop;
 	}
 
-	public static String getBrowser() {
-		if (prop == null)
-			init_properties();
-
-		String browserName = prop.getProperty("Browser");
-		if (browserName != null)
-			return browserName;
-		else
-			throw new RuntimeException("Browser is  not specified in the config.properties file.");
-	}
-
+	
 	public static String getApplicationUrl() {
 		if (prop == null)
 			init_properties();
@@ -62,36 +52,38 @@ public class ConfigReader {
 			throw new RuntimeException("url not specified in the config.properties file.");
 	}
 
-	public static String getUserName() {
+	
+	
+	public static String getStringValue(String key) {
 		if (prop == null)
 			init_properties();
-		String username = prop.getProperty("username");
-		if (username != null)
-			return username;
+		String value = prop.getProperty(key);
+		if (value != null)
+			return value;
 		else
-			throw new RuntimeException("username not specified in the config.properties file.");
-	}
-
-	public static String getInvocationMode() {
-		if (prop == null)
-			init_properties();
-
-		String invocation_mode = prop.getProperty("invocation_mode");// System.out.println(invocation_mode);
-		if (invocation_mode != null)
-			return invocation_mode;
-		else
-			throw new RuntimeException("Browser is  not specified in the config.properties file.");
+			throw new RuntimeException(key+" not specified in the config.properties file.");
 	}
 	
-	public static long getSleepTime() {
+	public static long getLongValue(String key) {
 		if (prop == null)
 			init_properties();
-
-		String sleep_time= prop.getProperty("sleep_time");// System.out.println(invocation_mode);
-		if (sleep_time != null)
-			return Long.parseLong(sleep_time);
+		String value = prop.getProperty(key);
+		if (value != null)
+			return Long.parseLong(value);
 		else
-			throw new RuntimeException("Sleep time is  not specified in the config.properties file.");
+			throw new RuntimeException(key+" not specified in the config.properties file.");
 	}
+
+	public static int getIntValue(String key) {
+		if (prop == null)
+			init_properties();
+		String value = prop.getProperty(key);
+		if (value != null)
+			return Integer.parseInt(value);
+		else
+			throw new RuntimeException(key+" not specified in the config.properties file.");
+	}
+	
+	
 
 }

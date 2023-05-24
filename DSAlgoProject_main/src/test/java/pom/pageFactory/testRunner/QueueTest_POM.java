@@ -15,6 +15,7 @@ import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.QueuePage;
 import pom.pageFactory.pageObject.SignInPage;
 import pom.pageFactory.pageObject.StackPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class QueueTest_POM {
@@ -41,7 +42,7 @@ public class QueueTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -62,8 +63,8 @@ public class QueueTest_POM {
 	public void LoginUser() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -80,7 +81,7 @@ public class QueueTest_POM {
 		qup.clickImplementationQueue();
 		Sleep.sleep();
 		qup.clickTryHere();
-		qup.addCodeInTextArea("print 'I am in implementation of queue in python module'");
+		qup.addCodeInTextArea(ConfigReader.getStringValue("QueuePage_ImplementationQueue_PythonCode"));
 		qup.clickRunButton();
 		Sleep.sleep();
 		driver.navigate().back();
@@ -90,7 +91,7 @@ public class QueueTest_POM {
 		qup = new QueuePage(driver);
 		qup.clickImplementationCollections();
 		qup.clickTryHere();
-		qup.addCodeInTextArea("print 'I am in Implementation Collections Module'");
+		qup.addCodeInTextArea(ConfigReader.getStringValue("QueuePage_ImplementationCollections_PythonCode"));
 		qup.clickRunButton();
 		Sleep.sleep();
 		driver.navigate().back();
@@ -100,7 +101,7 @@ public class QueueTest_POM {
 		qup = new QueuePage(driver);
 		qup.clickImplementationArray();
 		qup.clickTryHere();
-		qup.addCodeInTextArea("print 'I am in Implementation of Array Module'");
+		qup.addCodeInTextArea(ConfigReader.getStringValue("QueuePage_ImplementationArray_PythonCode"));
 		qup.clickRunButton();
 		Sleep.sleep();
 		driver.navigate().back();
@@ -110,7 +111,7 @@ public class QueueTest_POM {
 		qup = new QueuePage(driver);
 		qup.clickQeueuOps();
 		qup.clickTryHere();
-		qup.addCodeInTextArea("print 'I am in Queue Operations Module'");
+		qup.addCodeInTextArea(ConfigReader.getStringValue("QueuePage_clickQueueOperations_PythonCode"));
 		qup.clickRunButton();
 		Sleep.sleep();
 		driver.navigate().back();

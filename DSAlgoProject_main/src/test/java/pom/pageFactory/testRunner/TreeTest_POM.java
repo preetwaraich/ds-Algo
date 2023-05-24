@@ -14,6 +14,7 @@ import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.QueuePage;
 import pom.pageFactory.pageObject.SignInPage;
 import pom.pageFactory.pageObject.TreePage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class TreeTest_POM {
@@ -40,7 +41,7 @@ public class TreeTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -61,8 +62,8 @@ public class TreeTest_POM {
 	public void Login_User() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -79,7 +80,7 @@ public class TreeTest_POM {
 		tp.clickOverviewOfTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Overview of Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_OverviewOfTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -90,7 +91,7 @@ public class TreeTest_POM {
 		tp.clickTerminologies();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Terminologies'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_Terminolgies_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -101,7 +102,7 @@ public class TreeTest_POM {
 		tp.clickTypesOfTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Types of Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_TypesOfTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -111,7 +112,7 @@ public class TreeTest_POM {
 		tp = new TreePage(driver);
 		tp.clickTreeTraversals();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Tree Traversals'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_TreeTraversals_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -122,7 +123,7 @@ public class TreeTest_POM {
 		tp.clickTraversalIllustration();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Traversals Illustration'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_TraversalIllustration_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -133,7 +134,7 @@ public class TreeTest_POM {
 		tp.clickTypesOfBinaryTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Types Of Binary Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_TypesOfBinaryTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -144,7 +145,7 @@ public class TreeTest_POM {
 		tp.clickImpInPython();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Implementation In Python'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_ImpInPython_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -154,7 +155,7 @@ public class TreeTest_POM {
 		tp.clickBinaryTreeTravesals();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Tree Travesals'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_BinaryTreeTravesals_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -164,7 +165,7 @@ public class TreeTest_POM {
 		tp.clickImpOfBinaryTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Binary Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_ImpOfBinaryTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -174,7 +175,7 @@ public class TreeTest_POM {
 		tp.clickAppOfBinaryTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Applications of Binary Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_AppOfBinaryTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -185,7 +186,7 @@ public class TreeTest_POM {
 		tp.clickBinarySearchTrees();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Binary Search Trees'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_BinarySearchTrees_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}
@@ -196,7 +197,7 @@ public class TreeTest_POM {
 		tp.clickImpOfBST();
 		Sleep.sleep();
 		tp.clickTryHere();
-		tp.addCodeInTextArea("print 'I am in Implementation of BST Module'");
+		tp.addCodeInTextArea(ConfigReader.getStringValue("TreePage_ImpOfBST_PythonCode"));
 		tp.clickRunButton();
 		driver.navigate().back();
 	}

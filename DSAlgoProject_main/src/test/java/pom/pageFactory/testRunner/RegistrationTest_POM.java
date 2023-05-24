@@ -13,6 +13,7 @@ import pom.pageFactory.pageObject.GetStartedPage;
 import pom.pageFactory.pageObject.GraphPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.RegisterPage;
+import utilities.ConfigReader;
 
 public class RegistrationTest_POM {
 	
@@ -24,7 +25,7 @@ public class RegistrationTest_POM {
 	@BeforeTest
 		public void setupTest() {
 		driver=DriverFactory.getDriverForChrome_MultipleClasses();
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 		
 	}
 	
@@ -36,7 +37,7 @@ public class RegistrationTest_POM {
 	
 	@Test(groups= {"Smoke","Page"},priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 	
 	@Test(groups= {"Smoke","Page"},priority = 3)
@@ -57,9 +58,9 @@ public class RegistrationTest_POM {
 	@Test(groups= {"Smoke","Page"},priority = 5)
 	public void registerUserNegativeTest() {
 		rp = new RegisterPage(driver);
-		rp.enterUsername("Login1234");
-		rp.enterPassword("Login1234");
-		rp.enterconfirmPassword("Login1234");
+		rp.enterUsername(ConfigReader.getStringValue("wrong_user_name"));
+		rp.enterPassword(ConfigReader.getStringValue("password"));
+		rp.enterconfirmPassword(ConfigReader.getStringValue("password"));
 		rp.clickRegisterButton();
 		System.out.println(rp.getErrorMsg());
 	}
@@ -71,8 +72,8 @@ public class RegistrationTest_POM {
 
 		rp = new RegisterPage(driver);
 		rp.enterUsername(RandomStringUtils.random(8, true, true));
-		rp.enterPassword("Login1234");
-		rp.enterconfirmPassword("Login1234");
+		rp.enterPassword(ConfigReader.getStringValue("password"));
+		rp.enterconfirmPassword(ConfigReader.getStringValue("password"));
 		rp.clickRegisterButton();
 		//driver.get("https://dsportalapp.herokuapp.com");
 		//gsp.clickGetStarted_btn();
@@ -89,7 +90,7 @@ public class RegistrationTest_POM {
 	
 	@Test(groups= {"Page"},priority = 10)
 	public void closeDriver() {
-		driver.close();
+		//driver.close();
 		driver.quit();
 	}
 	

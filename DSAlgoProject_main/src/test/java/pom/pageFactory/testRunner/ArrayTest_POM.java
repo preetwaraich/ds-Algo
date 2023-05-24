@@ -14,6 +14,7 @@ import pom.pageFactory.pageObject.DataStructurePage;
 import pom.pageFactory.pageObject.GetStartedPage;
 import pom.pageFactory.pageObject.HomePage;
 import pom.pageFactory.pageObject.SignInPage;
+import utilities.ConfigReader;
 import utilities.Sleep;
 
 public class ArrayTest_POM {
@@ -40,7 +41,7 @@ public class ArrayTest_POM {
 
 	@Test(groups = { "Page" }, priority = 2)
 	public void LoadAppHome() {
-		driver.get("https://dsportalapp.herokuapp.com");
+		driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@Test(groups = { "Page" }, priority = 3)
@@ -61,8 +62,8 @@ public class ArrayTest_POM {
 	public void LoginUser() {
 
 		sip = new SignInPage(driver);
-		sip.enterUsername("MyNewUser9899");
-		sip.enterPassword("Login1234");
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 	}
 
@@ -78,7 +79,7 @@ public class ArrayTest_POM {
 		ap = new ArrayPage(driver);
 		ap.clickArraysInPython();
 		ap.clickTryHere();
-		ap.addCodeInTextArea("print WrongTest");
+		ap.addCodeInTextArea(ConfigReader.getStringValue("arrayPage_WrongTest_PythonCode"));
 		ap.clickRunButton();
 		String errorMessage = driver.switchTo().alert().getText();
 		System.out.println(errorMessage);
@@ -92,7 +93,7 @@ public class ArrayTest_POM {
 	@Test(groups = { "Smoke", "Page" }, priority = 10)
 	public void ArrayPage_ArraysInPython() {
 		ap = new ArrayPage(driver);
-		ap.addCodeInTextArea("print 'I am in Arrays In Python'");
+		ap.addCodeInTextArea(ConfigReader.getStringValue("arrayPage_ArraysInPython_PythonCode"));
 		ap.clickRunButton();
 		driver.navigate().back();
 	}
@@ -103,7 +104,7 @@ public class ArrayTest_POM {
 		ap.clickArraysUsingList();
 		// Todo Add Scroll
 		ap.clickTryHere();
-		ap.addCodeInTextArea("print 'I am in Arrays Using List'");
+		ap.addCodeInTextArea(ConfigReader.getStringValue("arrayPage_ArraysUsingList_PythonCode"));
 		ap.clickRunButton();
 		driver.navigate().back();
 	}
@@ -114,7 +115,7 @@ public class ArrayTest_POM {
 		ap.clickBasicOperationsInLists();
 		// Todo Add Scroll
 		ap.clickTryHere();
-		ap.addCodeInTextArea("print 'I am in Basic Operations in Lists'");
+		ap.addCodeInTextArea(ConfigReader.getStringValue("arrayPage_BasicOperations_PythonCode"));
 		ap.clickRunButton();
 		driver.navigate().back();
 	}
@@ -125,7 +126,7 @@ public class ArrayTest_POM {
 		ap.clickApplicationsOfArray();
 		// Todo Add Scroll
 		ap.clickTryHere();
-		ap.addCodeInTextArea("print 'I am in Applications of Array'");
+		ap.addCodeInTextArea(ConfigReader.getStringValue("arrayPage_ApplicationsOfArrays_PythonCode"));
 		ap.clickRunButton();
 		driver.navigate().back();
 	}
