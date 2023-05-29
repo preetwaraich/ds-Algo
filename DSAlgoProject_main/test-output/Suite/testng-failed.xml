@@ -2,12 +2,71 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="pom.driverFactory.pageFactory.testRunner.RegistrationTest_POM">
+      <class name="pom.pageFactory.testRunner.TreeTest_POM">
         <methods>
-          <include name="registerUserError"/>
+          <include name="click_ImpInPython"/>
+          <include name="click_TypesOfTrees"/>
+          <include name="click_TypesOfBinaryTrees"/>
+          <include name="click_OverviewOfTrees"/>
+          <include name="click_Terminolgies"/>
+          <include name="tree_Dropdown"/>
+          <include name="click_ImpOfBinaryTrees"/>
+          <include name="click_BinarySearchTrees"/>
+          <include name="click_TraversalIllustration"/>
+          <include name="click_BinaryTreeTravesals"/>
+          <include name="click_AppOfBinaryTrees"/>
+          <include name="click_ImpOfBST"/>
+          <include name="click_TreeTraversals"/>
+          <include name="tree_PracticeQuestionsLink"/>
         </methods>
-      </class> <!-- pom.driverFactory.pageFactory.testRunner.RegistrationTest_POM -->
+      </class> <!-- pom.pageFactory.testRunner.TreeTest_POM -->
+      <class name="pom.pageFactory.testRunner.QueueTest_POM">
+        <methods>
+          <include name="clickQueueOperations"/>
+          <include name="clickImplementationArray"/>
+          <include name="clickImplementationCollections"/>
+          <include name="queue_Dropdown"/>
+          <include name="clickImplementationQueue"/>
+          <include name="queue_PracticeQuestionsLink"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.QueueTest_POM -->
+      <class name="pom.pageFactory.testRunner.LinkedListTest_POM">
+        <methods>
+          <include name="deletion"/>
+          <include name="create_LinkedList"/>
+          <include name="LinkedList_PracticeQuestionsLink"/>
+          <include name="implementLLInPython"/>
+          <include name="LinkedList_DropDown_LL"/>
+          <include name="introduction"/>
+          <include name="insertion"/>
+          <include name="traversal"/>
+          <include name="typeOfLinkedList"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.LinkedListTest_POM -->
+      <class name="pom.pageFactory.testRunner.StackTest_POM">
+        <methods>
+          <include name="stack_PracticeQuestionsLink"/>
+          <include name="stack_DropDown"/>
+          <include name="implementation_stack"/>
+          <include name="application_stack"/>
+          <include name="operations_in_stack"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.StackTest_POM -->
+      <class name="pom.pageFactory.testRunner.GraphTest_POM">
+        <methods>
+          <include name="click_graph_representation"/>
+          <include name="click_graph_practice_questions"/>
+          <include name="graphPage_ClickSignOut"/>
+          <include name="click_graph_link"/>
+          <include name="click_graphLink_wrongText"/>
+        </methods>
+      </class> <!-- pom.pageFactory.testRunner.GraphTest_POM -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

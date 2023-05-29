@@ -29,13 +29,13 @@ public class RegistrationTest_POM {
 		
 	}
 	
-	@Test(groups= {"Smoke","Page"},priority = 1)
+	@Test(groups= {"Smoke","Page"},priority = 1,description = "Opening Home URL")
 	public void OpenHomeURL() {
 		if(driver==null)
 		driver=DriverFactory.getDriverForChrome_MultipleClasses();
 	}
 	
-	@Test(groups= {"Smoke","Page"},priority = 2)
+	@Test(groups= {"Smoke","Page"},priority = 2,description = "Loading Applicaton Home Page")
 	public void LoadAppHome() {
 		driver.get(ConfigReader.getApplicationUrl());
 	}
