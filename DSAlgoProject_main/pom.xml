@@ -24,7 +24,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_multiple2.xml</suiteXmlFile>
+						<suiteXmlFile>testNg_smoke_group/testng_Smoke_Group.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 

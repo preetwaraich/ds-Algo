@@ -1,128 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="49" total="122" passed="73" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-29T22:25:49 IST" name="Suite" finished-at="2023-05-29T22:26:27 IST" duration-ms="37536">
+  <suite started-at="2023-05-30T14:03:10 IST" name="Suite" finished-at="2023-05-30T14:05:30 IST" duration-ms="139758">
     <groups>
       <group name="Page">
-        <method signature="ArrayTest_POM.ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ApplicationsOfArrays" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ArraysInPython" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ArraysUsingList" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_BasicOperations" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_DropDown_LL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion1" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion2" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion3" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion4" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestionsLink" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_WrongInput" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ClickArrayLinkOnHomePage()[pri:7, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ClickArrayLinkOnHomePage" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ClickGetStarted()[pri:3, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ClickGetStarted" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ClickSignInLink()[pri:4, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ClickSignInLink" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.LoadAppHome()[pri:2, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="LoadAppHome" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.LoginUser()[pri:5, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="LoginUser" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="OpenHomeURL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.arrayPageSmokeTest_ClickSignOut()[pri:20, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="arrayPageSmokeTest_ClickSignOut" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.closeDriver()[pri:21, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="closeDriver" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ApplicationsOfArrays" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ArraysInPython" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ArraysUsingList" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_BasicOperations" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_DropDown_LL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion1" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion2" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion3" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion4" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestionsLink" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_WrongInput" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="OpenHomeURL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="DataStructureTest_POM.ClickDSLinkOnHomePage()[pri:7, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="ClickDSLinkOnHomePage" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_Dropdown()[pri:10, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_Dropdown" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_PracticeQuestion()[pri:9, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_PracticeQuestion" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_TimeComplexity()[pri:8, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_TimeComplexity" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="OpenHomeURL" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="GraphTest_POM.click_graphLink_wrongText()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graphLink_wrongText" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_link()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_link" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_practice_questions()[pri:13, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_practice_questions" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_representation()[pri:11, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_representation" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.closeDriver()[pri:17, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="closeDriver" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.graphPage_ClickSignOut()[pri:15, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="graphPage_ClickSignOut" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.instantiateDriver()[pri:1, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="instantiateDriver" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="LinkedListTest_POM.LinkedList_DropDown_LL()[pri:23, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="LinkedList_DropDown_LL" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.LinkedList_PracticeQuestionsLink()[pri:21, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="LinkedList_PracticeQuestionsLink" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="OpenHomeURL" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.create_LinkedList()[pri:11, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="create_LinkedList" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.deletion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="deletion" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.implementLLInPython()[pri:15, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="implementLLInPython" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.insertion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="insertion" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.introduction()[pri:9, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="introduction" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.traversal()[pri:17, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="traversal" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.typeOfLinkedList()[pri:13, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="typeOfLinkedList" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LoginTest_POM.ClickSignInLink()[pri:4, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="ClickSignInLink" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.LoginNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="LoginNegativeTest" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="OpenHomeURL" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.UserPositiveTest()[pri:6, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="UserPositiveTest" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="QueueTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="OpenHomeURL" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationArray()[pri:13, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationArray" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationCollections()[pri:11, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationCollections" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationQueue()[pri:9, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationQueue" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickQueueOperations()[pri:15, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickQueueOperations" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.queue_Dropdown()[pri:17, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="queue_Dropdown" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.queue_PracticeQuestionsLink()[pri:16, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="queue_PracticeQuestionsLink" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickGetStarted()[pri:3, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickGetStarted" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickRegisterLink()[pri:4, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickRegisterLink" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickSignOutLink()[pri:9, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickSignOutLink" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.LoadAppHome()[pri:2, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="LoadAppHome" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="OpenHomeURL" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.registerUserNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="registerUserNegativeTest" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.registerUserPositiveTest()[pri:7, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="registerUserPositiveTest" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="StackTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="OpenHomeURL" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.application_stack()[pri:13, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="application_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.implementation_stack()[pri:11, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="implementation_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.operations_in_stack()[pri:9, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="operations_in_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.stack_DropDown()[pri:17, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="stack_DropDown" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.stack_PracticeQuestionsLink()[pri:15, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="stack_PracticeQuestionsLink" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="TreeTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="OpenHomeURL" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_AppOfBinaryTrees()[pri:25, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_AppOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_BinarySearchTrees()[pri:27, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_BinarySearchTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_BinaryTreeTravesals()[pri:21, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_BinaryTreeTravesals" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpInPython()[pri:19, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpInPython" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpOfBST()[pri:29, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpOfBST" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpOfBinaryTrees()[pri:23, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_OverviewOfTrees()[pri:9, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_OverviewOfTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_Terminolgies()[pri:11, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_Terminolgies" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TraversalIllustration()[pri:15, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TraversalIllustration" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TreeTraversals()[pri:14, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TreeTraversals" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TypesOfBinaryTrees()[pri:17, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TypesOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TypesOfTrees()[pri:13, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TypesOfTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.tree_Dropdown()[pri:33, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="tree_Dropdown" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.tree_PracticeQuestionsLink()[pri:31, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="tree_PracticeQuestionsLink" class="pom.pageFactory.testRunner.TreeTest_POM"/>
       </group> <!-- Page -->
       <group name="Smoke">
-        <method signature="ArrayTest_POM.ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ApplicationsOfArrays" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ArraysInPython" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_ArraysUsingList" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_BasicOperations" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_DropDown_LL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion1" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion2" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion3" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestion4" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_PracticeQuestionsLink" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="ArrayPage_WrongInput" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
-        <method signature="ArrayTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" name="OpenHomeURL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ApplicationsOfArrays" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ArraysInPython" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_ArraysUsingList" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_BasicOperations" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_DropDown_LL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion1" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion2" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion3" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestion4" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_PracticeQuestionsLink" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="ArrayPage_WrongInput" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="ArrayTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" name="OpenHomeURL" class="pom.pageFactory.testRunner.ArrayTest_POM"/>
+        <method signature="DataStructureTest_POM.ClickDSLinkOnHomePage()[pri:7, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="ClickDSLinkOnHomePage" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_Dropdown()[pri:10, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_Dropdown" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_PracticeQuestion()[pri:9, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_PracticeQuestion" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.DataStructureSmokeTest_TimeComplexity()[pri:8, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="DataStructureSmokeTest_TimeComplexity" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="DataStructureTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" name="OpenHomeURL" class="pom.pageFactory.testRunner.DataStructureTest_POM"/>
+        <method signature="GraphTest_POM.click_graphLink_wrongText()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graphLink_wrongText" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_link()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_link" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_practice_questions()[pri:13, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_practice_questions" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.click_graph_representation()[pri:11, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="click_graph_representation" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.closeDriver()[pri:17, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="closeDriver" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.graphPage_ClickSignOut()[pri:15, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="graphPage_ClickSignOut" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="GraphTest_POM.instantiateDriver()[pri:1, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" name="instantiateDriver" class="pom.pageFactory.testRunner.GraphTest_POM"/>
+        <method signature="LinkedListTest_POM.LinkedList_DropDown_LL()[pri:23, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="LinkedList_DropDown_LL" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.LinkedList_PracticeQuestionsLink()[pri:21, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="LinkedList_PracticeQuestionsLink" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="OpenHomeURL" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.create_LinkedList()[pri:11, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="create_LinkedList" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.deletion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="deletion" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.implementLLInPython()[pri:15, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="implementLLInPython" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.insertion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="insertion" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.introduction()[pri:9, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="introduction" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.traversal()[pri:17, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="traversal" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LinkedListTest_POM.typeOfLinkedList()[pri:13, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" name="typeOfLinkedList" class="pom.pageFactory.testRunner.LinkedListTest_POM"/>
+        <method signature="LoginTest_POM.ClickSignInLink()[pri:4, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="ClickSignInLink" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.LoginNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="LoginNegativeTest" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="OpenHomeURL" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="LoginTest_POM.UserPositiveTest()[pri:6, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" name="UserPositiveTest" class="pom.pageFactory.testRunner.LoginTest_POM"/>
+        <method signature="QueueTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="OpenHomeURL" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationArray()[pri:13, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationArray" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationCollections()[pri:11, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationCollections" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickImplementationQueue()[pri:9, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickImplementationQueue" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.clickQueueOperations()[pri:15, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="clickQueueOperations" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.queue_Dropdown()[pri:17, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="queue_Dropdown" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="QueueTest_POM.queue_PracticeQuestionsLink()[pri:16, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" name="queue_PracticeQuestionsLink" class="pom.pageFactory.testRunner.QueueTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickGetStarted()[pri:3, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickGetStarted" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickRegisterLink()[pri:4, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickRegisterLink" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.ClickSignOutLink()[pri:9, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="ClickSignOutLink" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.LoadAppHome()[pri:2, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="LoadAppHome" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="OpenHomeURL" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.registerUserNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="registerUserNegativeTest" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="RegistrationTest_POM.registerUserPositiveTest()[pri:7, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" name="registerUserPositiveTest" class="pom.pageFactory.testRunner.RegistrationTest_POM"/>
+        <method signature="StackTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="OpenHomeURL" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.application_stack()[pri:13, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="application_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.implementation_stack()[pri:11, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="implementation_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.operations_in_stack()[pri:9, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="operations_in_stack" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.stack_DropDown()[pri:17, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="stack_DropDown" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="StackTest_POM.stack_PracticeQuestionsLink()[pri:15, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" name="stack_PracticeQuestionsLink" class="pom.pageFactory.testRunner.StackTest_POM"/>
+        <method signature="TreeTest_POM.OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="OpenHomeURL" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_AppOfBinaryTrees()[pri:25, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_AppOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_BinarySearchTrees()[pri:27, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_BinarySearchTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_BinaryTreeTravesals()[pri:21, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_BinaryTreeTravesals" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpInPython()[pri:19, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpInPython" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpOfBST()[pri:29, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpOfBST" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_ImpOfBinaryTrees()[pri:23, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_ImpOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_OverviewOfTrees()[pri:9, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_OverviewOfTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_Terminolgies()[pri:11, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_Terminolgies" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TraversalIllustration()[pri:15, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TraversalIllustration" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TreeTraversals()[pri:14, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TreeTraversals" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TypesOfBinaryTrees()[pri:17, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TypesOfBinaryTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.click_TypesOfTrees()[pri:13, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="click_TypesOfTrees" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.tree_Dropdown()[pri:33, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="tree_Dropdown" class="pom.pageFactory.testRunner.TreeTest_POM"/>
+        <method signature="TreeTest_POM.tree_PracticeQuestionsLink()[pri:31, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" name="tree_PracticeQuestionsLink" class="pom.pageFactory.testRunner.TreeTest_POM"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-05-29T22:25:49 IST" name="Test" finished-at="2023-05-29T22:26:27 IST" duration-ms="37536">
-      <class name="pom.pageFactory.testRunner.ArrayTest_POM">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:49 IST" name="setupTest" finished-at="2023-05-29T22:25:54 IST" duration-ms="4942" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:54 IST" name="OpenHomeURL" finished-at="2023-05-29T22:25:54 IST" duration-ms="63" status="PASS">
+    <test started-at="2023-05-30T14:03:10 IST" name="Test" finished-at="2023-05-30T14:05:30 IST" duration-ms="139758">
+      <class name="pom.pageFactory.testRunner.RegistrationTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:10 IST" name="OpenHomeURL" description="Opening Home URL" finished-at="2023-05-30T14:03:15 IST" duration-ms="4431" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenHomeURL -->
-        <test-method signature="LoadAppHome()[pri:2, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:55 IST" name="LoadAppHome" finished-at="2023-05-29T22:25:57 IST" duration-ms="2417" status="PASS">
+        <test-method signature="LoadAppHome()[pri:2, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:15 IST" name="LoadAppHome" description="Loading Applicaton Home Page" finished-at="2023-05-30T14:03:17 IST" duration-ms="1772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoadAppHome -->
-        <test-method signature="ClickGetStarted()[pri:3, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:57 IST" name="ClickGetStarted" finished-at="2023-05-29T22:25:59 IST" duration-ms="1540" status="PASS">
+        <test-method signature="ClickGetStarted()[pri:3, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:17 IST" name="ClickGetStarted" finished-at="2023-05-30T14:03:18 IST" duration-ms="1630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickGetStarted -->
-        <test-method signature="ClickSignInLink()[pri:4, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:59 IST" name="ClickSignInLink" finished-at="2023-05-29T22:25:59 IST" duration-ms="618" status="PASS">
+        <test-method signature="ClickRegisterLink()[pri:4, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:18 IST" name="ClickRegisterLink" finished-at="2023-05-30T14:03:19 IST" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickSignInLink -->
-        <test-method signature="LoginUser()[pri:5, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:25:59 IST" name="LoginUser" finished-at="2023-05-29T22:26:00 IST" duration-ms="1215" status="PASS">
+        </test-method> <!-- ClickRegisterLink -->
+        <test-method signature="registerUserNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:19 IST" name="registerUserNegativeTest" finished-at="2023-05-30T14:03:20 IST" duration-ms="1257" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginUser -->
-        <test-method signature="ClickArrayLinkOnHomePage()[pri:7, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:00 IST" name="ClickArrayLinkOnHomePage" finished-at="2023-05-29T22:26:01 IST" duration-ms="957" status="PASS">
+        </test-method> <!-- registerUserNegativeTest -->
+        <test-method signature="registerUserPositiveTest()[pri:7, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:20 IST" name="registerUserPositiveTest" finished-at="2023-05-30T14:03:22 IST" duration-ms="1287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickArrayLinkOnHomePage -->
-        <test-method signature="ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:01 IST" name="ArrayPage_WrongInput" finished-at="2023-05-29T22:26:07 IST" duration-ms="5646" status="PASS">
+        </test-method> <!-- registerUserPositiveTest -->
+        <test-method signature="ClickSignOutLink()[pri:9, instance:pom.pageFactory.testRunner.RegistrationTest_POM@12591ac8]" started-at="2023-05-30T14:03:22 IST" name="ClickSignOutLink" finished-at="2023-05-30T14:03:22 IST" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickSignOutLink -->
+      </class> <!-- pom.pageFactory.testRunner.RegistrationTest_POM -->
+      <class name="pom.pageFactory.testRunner.LinkedListTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:03:56 IST" name="OpenHomeURL" finished-at="2023-05-30T14:03:56 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="introduction()[pri:9, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:03:56 IST" name="introduction" finished-at="2023-05-30T14:03:59 IST" duration-ms="3078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- introduction -->
+        <test-method signature="create_LinkedList()[pri:11, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:03:59 IST" name="create_LinkedList" finished-at="2023-05-30T14:04:02 IST" duration-ms="2874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_LinkedList -->
+        <test-method signature="typeOfLinkedList()[pri:13, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:02 IST" name="typeOfLinkedList" finished-at="2023-05-30T14:04:05 IST" duration-ms="3100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- typeOfLinkedList -->
+        <test-method signature="implementLLInPython()[pri:15, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:05 IST" name="implementLLInPython" finished-at="2023-05-30T14:04:08 IST" duration-ms="2682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implementLLInPython -->
+        <test-method signature="traversal()[pri:17, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:08 IST" name="traversal" finished-at="2023-05-30T14:04:10 IST" duration-ms="2857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- traversal -->
+        <test-method signature="deletion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:10 IST" name="deletion" finished-at="2023-05-30T14:04:13 IST" duration-ms="2713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletion -->
+        <test-method signature="insertion()[pri:19, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:13 IST" name="insertion" finished-at="2023-05-30T14:04:16 IST" duration-ms="2855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertion -->
+        <test-method signature="LinkedList_PracticeQuestionsLink()[pri:21, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:16 IST" name="LinkedList_PracticeQuestionsLink" finished-at="2023-05-30T14:04:17 IST" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkedList_PracticeQuestionsLink -->
+        <test-method signature="LinkedList_DropDown_LL()[pri:23, instance:pom.pageFactory.testRunner.LinkedListTest_POM@23941fb4]" started-at="2023-05-30T14:04:17 IST" name="LinkedList_DropDown_LL" finished-at="2023-05-30T14:04:18 IST" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkedList_DropDown_LL -->
+      </class> <!-- pom.pageFactory.testRunner.LinkedListTest_POM -->
+      <class name="pom.pageFactory.testRunner.TreeTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:39 IST" name="OpenHomeURL" finished-at="2023-05-30T14:04:39 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="click_OverviewOfTrees()[pri:9, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:39 IST" name="click_OverviewOfTrees" finished-at="2023-05-30T14:04:42 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_OverviewOfTrees -->
+        <test-method signature="click_Terminolgies()[pri:11, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:42 IST" name="click_Terminolgies" finished-at="2023-05-30T14:04:45 IST" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_Terminolgies -->
+        <test-method signature="click_TypesOfTrees()[pri:13, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:45 IST" name="click_TypesOfTrees" finished-at="2023-05-30T14:04:48 IST" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_TypesOfTrees -->
+        <test-method signature="click_TreeTraversals()[pri:14, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:48 IST" name="click_TreeTraversals" finished-at="2023-05-30T14:04:51 IST" duration-ms="3013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_TreeTraversals -->
+        <test-method signature="click_TraversalIllustration()[pri:15, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:51 IST" name="click_TraversalIllustration" finished-at="2023-05-30T14:04:54 IST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_TraversalIllustration -->
+        <test-method signature="click_TypesOfBinaryTrees()[pri:17, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:54 IST" name="click_TypesOfBinaryTrees" finished-at="2023-05-30T14:04:57 IST" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_TypesOfBinaryTrees -->
+        <test-method signature="click_ImpInPython()[pri:19, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:04:57 IST" name="click_ImpInPython" finished-at="2023-05-30T14:05:00 IST" duration-ms="2891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_ImpInPython -->
+        <test-method signature="click_BinaryTreeTravesals()[pri:21, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:00 IST" name="click_BinaryTreeTravesals" finished-at="2023-05-30T14:05:04 IST" duration-ms="3699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_BinaryTreeTravesals -->
+        <test-method signature="click_ImpOfBinaryTrees()[pri:23, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:04 IST" name="click_ImpOfBinaryTrees" finished-at="2023-05-30T14:05:07 IST" duration-ms="2904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_ImpOfBinaryTrees -->
+        <test-method signature="click_AppOfBinaryTrees()[pri:25, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:07 IST" name="click_AppOfBinaryTrees" finished-at="2023-05-30T14:05:10 IST" duration-ms="2886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_AppOfBinaryTrees -->
+        <test-method signature="click_BinarySearchTrees()[pri:27, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:10 IST" name="click_BinarySearchTrees" finished-at="2023-05-30T14:05:13 IST" duration-ms="3600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_BinarySearchTrees -->
+        <test-method signature="click_ImpOfBST()[pri:29, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:13 IST" name="click_ImpOfBST" finished-at="2023-05-30T14:05:17 IST" duration-ms="3949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_ImpOfBST -->
+        <test-method signature="tree_PracticeQuestionsLink()[pri:31, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:17 IST" name="tree_PracticeQuestionsLink" finished-at="2023-05-30T14:05:18 IST" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tree_PracticeQuestionsLink -->
+        <test-method signature="tree_Dropdown()[pri:33, instance:pom.pageFactory.testRunner.TreeTest_POM@5efa40fe]" started-at="2023-05-30T14:05:18 IST" name="tree_Dropdown" finished-at="2023-05-30T14:05:19 IST" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tree_Dropdown -->
+      </class> <!-- pom.pageFactory.testRunner.TreeTest_POM -->
+      <class name="pom.pageFactory.testRunner.ArrayTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:34 IST" name="OpenHomeURL" finished-at="2023-05-30T14:03:34 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="ArrayPage_WrongInput()[pri:9, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:34 IST" name="ArrayPage_WrongInput" finished-at="2023-05-30T14:03:38 IST" duration-ms="4227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_WrongInput -->
-        <test-method signature="ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:07 IST" name="ArrayPage_ArraysInPython" finished-at="2023-05-29T22:26:08 IST" duration-ms="833" status="PASS">
+        <test-method signature="ArrayPage_ArraysInPython()[pri:10, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:38 IST" name="ArrayPage_ArraysInPython" finished-at="2023-05-30T14:03:39 IST" duration-ms="900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_ArraysInPython -->
-        <test-method signature="ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:08 IST" name="ArrayPage_ArraysUsingList" finished-at="2023-05-29T22:26:11 IST" duration-ms="3005" status="PASS">
+        <test-method signature="ArrayPage_ArraysUsingList()[pri:11, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:39 IST" name="ArrayPage_ArraysUsingList" finished-at="2023-05-30T14:03:42 IST" duration-ms="2776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_ArraysUsingList -->
-        <test-method signature="ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:11 IST" name="ArrayPage_BasicOperations" finished-at="2023-05-29T22:26:14 IST" duration-ms="2909" status="PASS">
+        <test-method signature="ArrayPage_BasicOperations()[pri:12, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:42 IST" name="ArrayPage_BasicOperations" finished-at="2023-05-30T14:03:45 IST" duration-ms="2784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_BasicOperations -->
-        <test-method signature="ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:14 IST" name="ArrayPage_ApplicationsOfArrays" finished-at="2023-05-29T22:26:17 IST" duration-ms="2813" status="PASS">
+        <test-method signature="ArrayPage_ApplicationsOfArrays()[pri:13, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:45 IST" name="ArrayPage_ApplicationsOfArrays" finished-at="2023-05-30T14:03:47 IST" duration-ms="2679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_ApplicationsOfArrays -->
-        <test-method signature="ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:17 IST" name="ArrayPage_PracticeQuestionsLink" finished-at="2023-05-29T22:26:17 IST" duration-ms="609" status="PASS">
+        <test-method signature="ArrayPage_PracticeQuestionsLink()[pri:14, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:47 IST" name="ArrayPage_PracticeQuestionsLink" finished-at="2023-05-30T14:03:48 IST" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_PracticeQuestionsLink -->
-        <test-method signature="ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:17 IST" name="ArrayPage_PracticeQuestion1" finished-at="2023-05-29T22:26:19 IST" duration-ms="1680" status="PASS">
+        <test-method signature="ArrayPage_PracticeQuestion1()[pri:15, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:48 IST" name="ArrayPage_PracticeQuestion1" finished-at="2023-05-30T14:03:50 IST" duration-ms="1597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_PracticeQuestion1 -->
-        <test-method signature="ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:19 IST" name="ArrayPage_PracticeQuestion2" finished-at="2023-05-29T22:26:21 IST" duration-ms="1837" status="PASS">
+        <test-method signature="ArrayPage_PracticeQuestion2()[pri:16, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:50 IST" name="ArrayPage_PracticeQuestion2" finished-at="2023-05-30T14:03:51 IST" duration-ms="1675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_PracticeQuestion2 -->
-        <test-method signature="ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:21 IST" name="ArrayPage_PracticeQuestion3" finished-at="2023-05-29T22:26:22 IST" duration-ms="1500" status="PASS">
+        <test-method signature="ArrayPage_PracticeQuestion3()[pri:17, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:51 IST" name="ArrayPage_PracticeQuestion3" finished-at="2023-05-30T14:03:53 IST" duration-ms="1448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_PracticeQuestion3 -->
-        <test-method signature="ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:22 IST" name="ArrayPage_PracticeQuestion4" finished-at="2023-05-29T22:26:24 IST" duration-ms="1757" status="PASS">
+        <test-method signature="ArrayPage_PracticeQuestion4()[pri:18, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:53 IST" name="ArrayPage_PracticeQuestion4" finished-at="2023-05-30T14:03:54 IST" duration-ms="1598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_PracticeQuestion4 -->
-        <test-method signature="ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:24 IST" name="ArrayPage_DropDown_LL" finished-at="2023-05-29T22:26:26 IST" duration-ms="1535" status="PASS">
+        <test-method signature="ArrayPage_DropDown_LL()[pri:19, instance:pom.pageFactory.testRunner.ArrayTest_POM@1df8da7a]" started-at="2023-05-30T14:03:54 IST" name="ArrayPage_DropDown_LL" finished-at="2023-05-30T14:03:56 IST" duration-ms="1336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArrayPage_DropDown_LL -->
-        <test-method signature="arrayPageSmokeTest_ClickSignOut()[pri:20, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:26 IST" name="arrayPageSmokeTest_ClickSignOut" finished-at="2023-05-29T22:26:26 IST" duration-ms="826" status="PASS">
+      </class> <!-- pom.pageFactory.testRunner.ArrayTest_POM -->
+      <class name="pom.pageFactory.testRunner.StackTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:18 IST" name="OpenHomeURL" finished-at="2023-05-30T14:04:18 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- arrayPageSmokeTest_ClickSignOut -->
-        <test-method signature="closeDriver()[pri:21, instance:pom.pageFactory.testRunner.ArrayTest_POM@7857fe2]" started-at="2023-05-29T22:26:26 IST" name="closeDriver" finished-at="2023-05-29T22:26:27 IST" duration-ms="400" status="PASS">
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="operations_in_stack()[pri:9, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:18 IST" name="operations_in_stack" finished-at="2023-05-30T14:04:21 IST" duration-ms="2917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- operations_in_stack -->
+        <test-method signature="implementation_stack()[pri:11, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:21 IST" name="implementation_stack" finished-at="2023-05-30T14:04:23 IST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implementation_stack -->
+        <test-method signature="application_stack()[pri:13, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:23 IST" name="application_stack" finished-at="2023-05-30T14:04:25 IST" duration-ms="2321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- application_stack -->
+        <test-method signature="stack_PracticeQuestionsLink()[pri:15, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:25 IST" name="stack_PracticeQuestionsLink" finished-at="2023-05-30T14:04:26 IST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_PracticeQuestionsLink -->
+        <test-method signature="stack_DropDown()[pri:17, instance:pom.pageFactory.testRunner.StackTest_POM@660acfb]" started-at="2023-05-30T14:04:26 IST" name="stack_DropDown" finished-at="2023-05-30T14:04:27 IST" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stack_DropDown -->
+      </class> <!-- pom.pageFactory.testRunner.StackTest_POM -->
+      <class name="pom.pageFactory.testRunner.DataStructureTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" started-at="2023-05-30T14:03:25 IST" name="OpenHomeURL" finished-at="2023-05-30T14:03:25 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="ClickDSLinkOnHomePage()[pri:7, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" started-at="2023-05-30T14:03:25 IST" name="ClickDSLinkOnHomePage" finished-at="2023-05-30T14:03:26 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickDSLinkOnHomePage -->
+        <test-method signature="DataStructureSmokeTest_TimeComplexity()[pri:8, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" started-at="2023-05-30T14:03:26 IST" name="DataStructureSmokeTest_TimeComplexity" finished-at="2023-05-30T14:03:32 IST" duration-ms="5609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureSmokeTest_TimeComplexity -->
+        <test-method signature="DataStructureSmokeTest_PracticeQuestion()[pri:9, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" started-at="2023-05-30T14:03:32 IST" name="DataStructureSmokeTest_PracticeQuestion" finished-at="2023-05-30T14:03:33 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureSmokeTest_PracticeQuestion -->
+        <test-method signature="DataStructureSmokeTest_Dropdown()[pri:10, instance:pom.pageFactory.testRunner.DataStructureTest_POM@798162bc]" started-at="2023-05-30T14:03:33 IST" name="DataStructureSmokeTest_Dropdown" finished-at="2023-05-30T14:03:34 IST" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureSmokeTest_Dropdown -->
+      </class> <!-- pom.pageFactory.testRunner.DataStructureTest_POM -->
+      <class name="pom.pageFactory.testRunner.LoginTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" started-at="2023-05-30T14:03:22 IST" name="OpenHomeURL" finished-at="2023-05-30T14:03:22 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="ClickSignInLink()[pri:4, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" started-at="2023-05-30T14:03:22 IST" name="ClickSignInLink" finished-at="2023-05-30T14:03:23 IST" duration-ms="607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickSignInLink -->
+        <test-method signature="LoginNegativeTest()[pri:5, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" started-at="2023-05-30T14:03:23 IST" name="LoginNegativeTest" finished-at="2023-05-30T14:03:24 IST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginNegativeTest -->
+        <test-method signature="UserPositiveTest()[pri:6, instance:pom.pageFactory.testRunner.LoginTest_POM@465232e9]" started-at="2023-05-30T14:03:24 IST" name="UserPositiveTest" finished-at="2023-05-30T14:03:25 IST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserPositiveTest -->
+      </class> <!-- pom.pageFactory.testRunner.LoginTest_POM -->
+      <class name="pom.pageFactory.testRunner.GraphTest_POM">
+        <test-method signature="instantiateDriver()[pri:1, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:19 IST" name="instantiateDriver" finished-at="2023-05-30T14:05:19 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateDriver -->
+        <test-method signature="click_graphLink_wrongText()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:19 IST" name="click_graphLink_wrongText" finished-at="2023-05-30T14:05:22 IST" duration-ms="2989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_graphLink_wrongText -->
+        <test-method signature="click_graph_link()[pri:9, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:22 IST" name="click_graph_link" finished-at="2023-05-30T14:05:25 IST" duration-ms="2498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_graph_link -->
+        <test-method signature="click_graph_representation()[pri:11, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:25 IST" name="click_graph_representation" finished-at="2023-05-30T14:05:28 IST" duration-ms="3238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_graph_representation -->
+        <test-method signature="click_graph_practice_questions()[pri:13, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:28 IST" name="click_graph_practice_questions" finished-at="2023-05-30T14:05:29 IST" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_graph_practice_questions -->
+        <test-method signature="graphPage_ClickSignOut()[pri:15, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:29 IST" name="graphPage_ClickSignOut" finished-at="2023-05-30T14:05:29 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- graphPage_ClickSignOut -->
+        <test-method signature="closeDriver()[pri:17, instance:pom.pageFactory.testRunner.GraphTest_POM@1f9f6368]" started-at="2023-05-30T14:05:29 IST" name="closeDriver" finished-at="2023-05-30T14:05:30 IST" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- pom.pageFactory.testRunner.ArrayTest_POM -->
+      </class> <!-- pom.pageFactory.testRunner.GraphTest_POM -->
+      <class name="pom.pageFactory.testRunner.QueueTest_POM">
+        <test-method signature="OpenHomeURL()[pri:1, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:27 IST" name="OpenHomeURL" finished-at="2023-05-30T14:04:27 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomeURL -->
+        <test-method signature="clickImplementationQueue()[pri:9, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:27 IST" name="clickImplementationQueue" finished-at="2023-05-30T14:04:30 IST" duration-ms="2762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImplementationQueue -->
+        <test-method signature="clickImplementationCollections()[pri:11, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:30 IST" name="clickImplementationCollections" finished-at="2023-05-30T14:04:32 IST" duration-ms="2434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImplementationCollections -->
+        <test-method signature="clickImplementationArray()[pri:13, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:32 IST" name="clickImplementationArray" finished-at="2023-05-30T14:04:35 IST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickImplementationArray -->
+        <test-method signature="clickQueueOperations()[pri:15, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:35 IST" name="clickQueueOperations" finished-at="2023-05-30T14:04:37 IST" duration-ms="2204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickQueueOperations -->
+        <test-method signature="queue_PracticeQuestionsLink()[pri:16, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:37 IST" name="queue_PracticeQuestionsLink" finished-at="2023-05-30T14:04:38 IST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queue_PracticeQuestionsLink -->
+        <test-method signature="queue_Dropdown()[pri:17, instance:pom.pageFactory.testRunner.QueueTest_POM@5d908d47]" started-at="2023-05-30T14:04:38 IST" name="queue_Dropdown" finished-at="2023-05-30T14:04:39 IST" duration-ms="1375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queue_Dropdown -->
+      </class> <!-- pom.pageFactory.testRunner.QueueTest_POM -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
