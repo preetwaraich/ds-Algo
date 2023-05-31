@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Preet\git\ds-Algo\DSAlgoProject_main\testng_Smoke_Group.xml</span>
+                    <span>C:\Users\Preet\git\ds-Algo\DSAlgoProject_main\testNg_smoke_group\testng_Smoke_Group.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">73 methods,   73 passed</span>
+                    <span class="method-stats">75 methods, 1 failed,   74 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="ClickSignOutLink">ClickSignOutLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -179,11 +193,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="ClickSignOutLink">ClickSignOutLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.DataStructureTest_POM" class="method navigator-link" hash-for-method="DataStructureSmokeTest_Dropdown">DataStructureSmokeTest_Dropdown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -219,17 +228,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.StackTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LoginTest_POM" class="method navigator-link" hash-for-method="LoginNegativeTest2">LoginNegativeTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.TreeTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LoginTest_POM" class="method navigator-link" hash-for-method="LoginNegativeTest3">LoginNegativeTest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.ArrayTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LoginTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -244,12 +253,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LinkedListTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.TreeTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LoginTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.ArrayTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.StackTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.LinkedListTest_POM" class="method navigator-link" hash-for-method="OpenHomeURL">OpenHomeURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -429,12 +448,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="registerUserNegativeTest">registerUserNegativeTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="registerInvalidUserNameTest">registerInvalidUserNameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="registerUserPositiveTest">registerUserPositiveTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pom.pageFactory.testRunner.RegistrationTest_POM" class="method navigator-link" hash-for-method="registerPasswordMismatchTest">registerPasswordMismatchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -479,6 +498,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pom.pageFactory.testRunner.RegistrationTest_POM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClickSignOutLink">
+                  </a> <!-- ClickSignOutLink -->
+                  <span class="method-name">ClickSignOutLink</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/logout&apos;]&quot;}
+  (Session info: chrome=114.0.5735.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7933522008bc39aae0ec152dfbb3fb66, findElement {using=xpath, value=//a[@href=&apos;/logout&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\Preet\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50135/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7933522008bc39aae0ec152dfbb3fb66
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+	at pom.pageFactory.pageObject.HomePage.clickSignOutLink(HomePage.java:181)
+	at pom.pageFactory.testRunner.RegistrationTest_POM.ClickSignOutLink(RegistrationTest_POM.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -595,63 +657,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">pom.pageFactory.testRunner.QueueTest_POM</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="OpenHomeURL">
-                  </a> <!-- OpenHomeURL -->
-                  <span class="method-name">OpenHomeURL</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickImplementationArray">
-                  </a> <!-- clickImplementationArray -->
-                  <span class="method-name">clickImplementationArray</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickImplementationCollections">
-                  </a> <!-- clickImplementationCollections -->
-                  <span class="method-name">clickImplementationCollections</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickImplementationQueue">
-                  </a> <!-- clickImplementationQueue -->
-                  <span class="method-name">clickImplementationQueue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickQueueOperations">
-                  </a> <!-- clickQueueOperations -->
-                  <span class="method-name">clickQueueOperations</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="queue_Dropdown">
-                  </a> <!-- queue_Dropdown -->
-                  <span class="method-name">queue_Dropdown</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="queue_PracticeQuestionsLink">
-                  </a> <!-- queue_PracticeQuestionsLink -->
-                  <span class="method-name">queue_PracticeQuestionsLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">pom.pageFactory.testRunner.ArrayTest_POM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -744,6 +749,63 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">pom.pageFactory.testRunner.QueueTest_POM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OpenHomeURL">
+                  </a> <!-- OpenHomeURL -->
+                  <span class="method-name">OpenHomeURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickImplementationArray">
+                  </a> <!-- clickImplementationArray -->
+                  <span class="method-name">clickImplementationArray</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickImplementationCollections">
+                  </a> <!-- clickImplementationCollections -->
+                  <span class="method-name">clickImplementationCollections</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickImplementationQueue">
+                  </a> <!-- clickImplementationQueue -->
+                  <span class="method-name">clickImplementationQueue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickQueueOperations">
+                  </a> <!-- clickQueueOperations -->
+                  <span class="method-name">clickQueueOperations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="queue_Dropdown">
+                  </a> <!-- queue_Dropdown -->
+                  <span class="method-name">queue_Dropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="queue_PracticeQuestionsLink">
+                  </a> <!-- queue_PracticeQuestionsLink -->
+                  <span class="method-name">queue_PracticeQuestionsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">pom.pageFactory.testRunner.RegistrationTest_POM</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -759,13 +821,6 @@
                   <a name="ClickRegisterLink">
                   </a> <!-- ClickRegisterLink -->
                   <span class="method-name">ClickRegisterLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ClickSignOutLink">
-                  </a> <!-- ClickSignOutLink -->
-                  <span class="method-name">ClickSignOutLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -788,16 +843,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUserNegativeTest">
-                  </a> <!-- registerUserNegativeTest -->
-                  <span class="method-name">registerUserNegativeTest</span>
+                  <a name="registerInvalidUserNameTest">
+                  </a> <!-- registerInvalidUserNameTest -->
+                  <span class="method-name">registerInvalidUserNameTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUserPositiveTest">
-                  </a> <!-- registerUserPositiveTest -->
-                  <span class="method-name">registerUserPositiveTest</span>
+                  <a name="registerPasswordMismatchTest">
+                  </a> <!-- registerPasswordMismatchTest -->
+                  <span class="method-name">registerPasswordMismatchTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -995,6 +1050,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="LoginNegativeTest2">
+                  </a> <!-- LoginNegativeTest2 -->
+                  <span class="method-name">LoginNegativeTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginNegativeTest3">
+                  </a> <!-- LoginNegativeTest3 -->
+                  <span class="method-name">LoginNegativeTest3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="OpenHomeURL">
                   </a> <!-- OpenHomeURL -->
                   <span class="method-name">OpenHomeURL</span>
@@ -1069,7 +1138,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Preet\git\ds-Algo\DSAlgoProject_main\testng_Smoke_Group.xml</span>
+            <span class="header-content">C:\Users\Preet\git\ds-Algo\DSAlgoProject_main\testNg_smoke_group\testng_Smoke_Group.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -1211,6 +1280,14 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">LoginNegativeTest2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginNegativeTest3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">OpenHomeURL</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -1351,11 +1428,11 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">registerUserNegativeTest</span>
+                <span class="method-in-group-name">registerInvalidUserNameTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">registerUserPositiveTest</span>
+                <span class="method-in-group-name">registerPasswordMismatchTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -1479,6 +1556,14 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">LoginNegativeTest2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginNegativeTest3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">OpenHomeURL</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -1619,11 +1704,11 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">registerUserNegativeTest</span>
+                <span class="method-in-group-name">registerInvalidUserNameTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">registerUserPositiveTest</span>
+                <span class="method-in-group-name">registerPasswordMismatchTest</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -1667,299 +1752,307 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(73);
+data.addRows(75);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'DataStructureSmokeTest_TimeComplexity')
-data.setCell(0, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
-data.setCell(0, 3, 5609);
+data.setCell(0, 1, 'ClickSignOutLink')
+data.setCell(0, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
+data.setCell(0, 3, 8120);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'OpenHomeURL')
-data.setCell(1, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(1, 3, 4431);
+data.setCell(1, 1, 'click_BinarySearchTrees')
+data.setCell(1, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(1, 3, 5075);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ArrayPage_WrongInput')
-data.setCell(2, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(2, 3, 4227);
+data.setCell(2, 1, 'DataStructureSmokeTest_TimeComplexity')
+data.setCell(2, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
+data.setCell(2, 3, 5044);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'click_ImpOfBST')
+data.setCell(3, 1, 'click_TypesOfBinaryTrees')
 data.setCell(3, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(3, 3, 3949);
+data.setCell(3, 3, 4747);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'click_BinaryTreeTravesals')
-data.setCell(4, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(4, 3, 3699);
+data.setCell(4, 1, 'OpenHomeURL')
+data.setCell(4, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
+data.setCell(4, 3, 4189);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'click_TypesOfBinaryTrees')
-data.setCell(5, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(5, 3, 3655);
+data.setCell(5, 1, 'ArrayPage_WrongInput')
+data.setCell(5, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(5, 3, 3761);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'click_BinarySearchTrees')
+data.setCell(6, 1, 'click_ImpOfBST')
 data.setCell(6, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(6, 3, 3600);
+data.setCell(6, 3, 3554);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'click_graph_representation')
-data.setCell(7, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(7, 3, 3238);
+data.setCell(7, 1, 'click_TraversalIllustration')
+data.setCell(7, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(7, 3, 3289);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'click_TraversalIllustration')
+data.setCell(8, 1, 'click_ImpInPython')
 data.setCell(8, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(8, 3, 3159);
+data.setCell(8, 3, 3246);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'click_OverviewOfTrees')
-data.setCell(9, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(9, 3, 3149);
+data.setCell(9, 1, 'typeOfLinkedList')
+data.setCell(9, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(9, 3, 3159);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'typeOfLinkedList')
-data.setCell(10, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(10, 3, 3100);
+data.setCell(10, 1, 'click_BinaryTreeTravesals')
+data.setCell(10, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(10, 3, 3132);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'introduction')
-data.setCell(11, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(11, 3, 3078);
+data.setCell(11, 1, 'click_graph_representation')
+data.setCell(11, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
+data.setCell(11, 3, 3001);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'click_TreeTraversals')
-data.setCell(12, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(12, 3, 3013);
+data.setCell(12, 1, 'operations_in_stack')
+data.setCell(12, 2, 'pom.pageFactory.testRunner.StackTest_POM')
+data.setCell(12, 3, 2958);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'click_graphLink_wrongText')
 data.setCell(13, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(13, 3, 2989);
+data.setCell(13, 3, 2917);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'operations_in_stack')
-data.setCell(14, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(14, 3, 2917);
+data.setCell(14, 1, 'click_ImpOfBinaryTrees')
+data.setCell(14, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(14, 3, 2908);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'click_ImpOfBinaryTrees')
+data.setCell(15, 1, 'click_TreeTraversals')
 data.setCell(15, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(15, 3, 2904);
+data.setCell(15, 3, 2907);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'click_ImpInPython')
+data.setCell(16, 1, 'click_TypesOfTrees')
 data.setCell(16, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(16, 3, 2891);
+data.setCell(16, 3, 2896);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'click_AppOfBinaryTrees')
+data.setCell(17, 1, 'click_OverviewOfTrees')
 data.setCell(17, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(17, 3, 2886);
+data.setCell(17, 3, 2866);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'create_LinkedList')
 data.setCell(18, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(18, 3, 2874);
+data.setCell(18, 3, 2857);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'traversal')
-data.setCell(19, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(19, 3, 2857);
+data.setCell(19, 1, 'clickImplementationQueue')
+data.setCell(19, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
+data.setCell(19, 3, 2785);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'insertion')
-data.setCell(20, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(20, 3, 2855);
+data.setCell(20, 1, 'ArrayPage_BasicOperations')
+data.setCell(20, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(20, 3, 2780);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'ArrayPage_BasicOperations')
-data.setCell(21, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(21, 3, 2784);
+data.setCell(21, 1, 'introduction')
+data.setCell(21, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(21, 3, 2762);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'ArrayPage_ArraysUsingList')
-data.setCell(22, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(22, 3, 2776);
+data.setCell(22, 1, 'click_Terminolgies')
+data.setCell(22, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(22, 3, 2744);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'clickImplementationQueue')
-data.setCell(23, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(23, 3, 2762);
+data.setCell(23, 1, 'click_AppOfBinaryTrees')
+data.setCell(23, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(23, 3, 2744);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'deletion')
-data.setCell(24, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(24, 3, 2713);
+data.setCell(24, 1, 'ArrayPage_ApplicationsOfArrays')
+data.setCell(24, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(24, 3, 2686);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'click_Terminolgies')
-data.setCell(25, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(25, 3, 2685);
+data.setCell(25, 1, 'implementLLInPython')
+data.setCell(25, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(25, 3, 2661);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'implementLLInPython')
-data.setCell(26, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(26, 3, 2682);
+data.setCell(26, 1, 'ArrayPage_ArraysUsingList')
+data.setCell(26, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(26, 3, 2647);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'ArrayPage_ApplicationsOfArrays')
-data.setCell(27, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(27, 3, 2679);
+data.setCell(27, 1, 'insertion')
+data.setCell(27, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(27, 3, 2646);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'click_TypesOfTrees')
-data.setCell(28, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(28, 3, 2670);
+data.setCell(28, 1, 'deletion')
+data.setCell(28, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(28, 3, 2582);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'implementation_stack')
-data.setCell(29, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(29, 3, 2529);
+data.setCell(29, 1, 'traversal')
+data.setCell(29, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(29, 3, 2550);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'click_graph_link')
-data.setCell(30, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(30, 3, 2498);
+data.setCell(30, 1, 'clickImplementationCollections')
+data.setCell(30, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
+data.setCell(30, 3, 2503);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'clickImplementationCollections')
+data.setCell(31, 1, 'clickImplementationArray')
 data.setCell(31, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(31, 3, 2434);
+data.setCell(31, 3, 2394);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'application_stack')
+data.setCell(32, 1, 'implementation_stack')
 data.setCell(32, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(32, 3, 2321);
+data.setCell(32, 3, 2369);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'clickImplementationArray')
+data.setCell(33, 1, 'clickQueueOperations')
 data.setCell(33, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(33, 3, 2287);
+data.setCell(33, 3, 2354);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'clickQueueOperations')
-data.setCell(34, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(34, 3, 2204);
+data.setCell(34, 1, 'click_graph_link')
+data.setCell(34, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
+data.setCell(34, 3, 2333);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'LoadAppHome')
-data.setCell(35, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(35, 3, 1772);
+data.setCell(35, 1, 'ArrayPage_PracticeQuestion4')
+data.setCell(35, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(35, 3, 2190);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'ArrayPage_PracticeQuestion2')
-data.setCell(36, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(36, 3, 1675);
+data.setCell(36, 1, 'application_stack')
+data.setCell(36, 2, 'pom.pageFactory.testRunner.StackTest_POM')
+data.setCell(36, 3, 2174);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'ClickGetStarted')
+data.setCell(37, 1, 'LoadAppHome')
 data.setCell(37, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(37, 3, 1630);
+data.setCell(37, 3, 1825);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'ArrayPage_PracticeQuestion4')
+data.setCell(38, 1, 'ArrayPage_PracticeQuestion3')
 data.setCell(38, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(38, 3, 1598);
+data.setCell(38, 3, 1776);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'ArrayPage_PracticeQuestion1')
 data.setCell(39, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(39, 3, 1597);
+data.setCell(39, 3, 1765);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'ArrayPage_PracticeQuestion3')
+data.setCell(40, 1, 'ArrayPage_PracticeQuestion2')
 data.setCell(40, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(40, 3, 1448);
+data.setCell(40, 3, 1498);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'DataStructureSmokeTest_Dropdown')
-data.setCell(41, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
-data.setCell(41, 3, 1431);
+data.setCell(41, 1, 'ClickGetStarted')
+data.setCell(41, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
+data.setCell(41, 3, 1377);
 data.setCell(42, 0, 42)
 data.setCell(42, 1, 'queue_Dropdown')
 data.setCell(42, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(42, 3, 1375);
+data.setCell(42, 3, 1366);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'ArrayPage_DropDown_LL')
-data.setCell(43, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(43, 3, 1336);
+data.setCell(43, 1, 'DataStructureSmokeTest_Dropdown')
+data.setCell(43, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
+data.setCell(43, 3, 1350);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'registerUserPositiveTest')
+data.setCell(44, 1, 'registerInvalidUserNameTest')
 data.setCell(44, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(44, 3, 1287);
+data.setCell(44, 3, 1317);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'registerUserNegativeTest')
-data.setCell(45, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(45, 3, 1257);
+data.setCell(45, 1, 'ArrayPage_DropDown_LL')
+data.setCell(45, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(45, 3, 1205);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'UserPositiveTest')
-data.setCell(46, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
-data.setCell(46, 3, 1249);
+data.setCell(46, 1, 'registerPasswordMismatchTest')
+data.setCell(46, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
+data.setCell(46, 3, 1194);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'LoginNegativeTest')
-data.setCell(47, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
-data.setCell(47, 3, 1064);
+data.setCell(47, 1, 'tree_Dropdown')
+data.setCell(47, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(47, 3, 1055);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'LinkedList_DropDown_LL')
-data.setCell(48, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(48, 3, 970);
+data.setCell(48, 1, 'UserPositiveTest')
+data.setCell(48, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
+data.setCell(48, 3, 1044);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'tree_Dropdown')
-data.setCell(49, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(49, 3, 960);
+data.setCell(49, 1, 'LinkedList_DropDown_LL')
+data.setCell(49, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(49, 3, 958);
 data.setCell(50, 0, 50)
 data.setCell(50, 1, 'stack_DropDown')
 data.setCell(50, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(50, 3, 953);
+data.setCell(50, 3, 902);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'ArrayPage_ArraysInPython')
-data.setCell(51, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(51, 3, 900);
+data.setCell(51, 1, 'LoginNegativeTest')
+data.setCell(51, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
+data.setCell(51, 3, 858);
 data.setCell(52, 0, 52)
-data.setCell(52, 1, 'ClickDSLinkOnHomePage')
-data.setCell(52, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
-data.setCell(52, 3, 824);
+data.setCell(52, 1, 'LoginNegativeTest3')
+data.setCell(52, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
+data.setCell(52, 3, 851);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'ClickSignOutLink')
-data.setCell(53, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(53, 3, 822);
+data.setCell(53, 1, 'DataStructureSmokeTest_PracticeQuestion')
+data.setCell(53, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
+data.setCell(53, 3, 826);
 data.setCell(54, 0, 54)
 data.setCell(54, 1, 'graphPage_ClickSignOut')
 data.setCell(54, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(54, 3, 778);
+data.setCell(54, 3, 793);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'closeDriver')
-data.setCell(55, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(55, 3, 750);
+data.setCell(55, 1, 'ClickDSLinkOnHomePage')
+data.setCell(55, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
+data.setCell(55, 3, 748);
 data.setCell(56, 0, 56)
-data.setCell(56, 1, 'LinkedList_PracticeQuestionsLink')
-data.setCell(56, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(56, 3, 739);
+data.setCell(56, 1, 'tree_PracticeQuestionsLink')
+data.setCell(56, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(56, 3, 726);
 data.setCell(57, 0, 57)
-data.setCell(57, 1, 'tree_PracticeQuestionsLink')
-data.setCell(57, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(57, 3, 705);
+data.setCell(57, 1, 'LinkedList_PracticeQuestionsLink')
+data.setCell(57, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(57, 3, 666);
 data.setCell(58, 0, 58)
-data.setCell(58, 1, 'stack_PracticeQuestionsLink')
-data.setCell(58, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(58, 3, 701);
+data.setCell(58, 1, 'ArrayPage_ArraysInPython')
+data.setCell(58, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(58, 3, 663);
 data.setCell(59, 0, 59)
 data.setCell(59, 1, 'click_graph_practice_questions')
 data.setCell(59, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(59, 3, 691);
+data.setCell(59, 3, 651);
 data.setCell(60, 0, 60)
-data.setCell(60, 1, 'queue_PracticeQuestionsLink')
-data.setCell(60, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
-data.setCell(60, 3, 675);
+data.setCell(60, 1, 'ClickRegisterLink')
+data.setCell(60, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
+data.setCell(60, 3, 620);
 data.setCell(61, 0, 61)
-data.setCell(61, 1, 'ClickRegisterLink')
-data.setCell(61, 2, 'pom.pageFactory.testRunner.RegistrationTest_POM')
-data.setCell(61, 3, 670);
+data.setCell(61, 1, 'ArrayPage_PracticeQuestionsLink')
+data.setCell(61, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(61, 3, 613);
 data.setCell(62, 0, 62)
-data.setCell(62, 1, 'DataStructureSmokeTest_PracticeQuestion')
-data.setCell(62, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
-data.setCell(62, 3, 633);
+data.setCell(62, 1, 'stack_PracticeQuestionsLink')
+data.setCell(62, 2, 'pom.pageFactory.testRunner.StackTest_POM')
+data.setCell(62, 3, 611);
 data.setCell(63, 0, 63)
-data.setCell(63, 1, 'ClickSignInLink')
-data.setCell(63, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
-data.setCell(63, 3, 607);
+data.setCell(63, 1, 'queue_PracticeQuestionsLink')
+data.setCell(63, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
+data.setCell(63, 3, 609);
 data.setCell(64, 0, 64)
-data.setCell(64, 1, 'ArrayPage_PracticeQuestionsLink')
-data.setCell(64, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(64, 3, 543);
+data.setCell(64, 1, 'ClickSignInLink')
+data.setCell(64, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
+data.setCell(64, 3, 486);
 data.setCell(65, 0, 65)
-data.setCell(65, 1, 'OpenHomeURL')
-data.setCell(65, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
-data.setCell(65, 3, 14);
+data.setCell(65, 1, 'closeDriver')
+data.setCell(65, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
+data.setCell(65, 3, 454);
 data.setCell(66, 0, 66)
-data.setCell(66, 1, 'OpenHomeURL')
-data.setCell(66, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
-data.setCell(66, 3, 13);
+data.setCell(66, 1, 'LoginNegativeTest2')
+data.setCell(66, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
+data.setCell(66, 3, 415);
 data.setCell(67, 0, 67)
 data.setCell(67, 1, 'OpenHomeURL')
-data.setCell(67, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
-data.setCell(67, 3, 12);
+data.setCell(67, 2, 'pom.pageFactory.testRunner.LinkedListTest_POM')
+data.setCell(67, 3, 14);
 data.setCell(68, 0, 68)
 data.setCell(68, 1, 'OpenHomeURL')
 data.setCell(68, 2, 'pom.pageFactory.testRunner.DataStructureTest_POM')
-data.setCell(68, 3, 12);
+data.setCell(68, 3, 13);
 data.setCell(69, 0, 69)
-data.setCell(69, 1, 'OpenHomeURL')
-data.setCell(69, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
+data.setCell(69, 1, 'instantiateDriver')
+data.setCell(69, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
 data.setCell(69, 3, 9);
 data.setCell(70, 0, 70)
 data.setCell(70, 1, 'OpenHomeURL')
-data.setCell(70, 2, 'pom.pageFactory.testRunner.StackTest_POM')
-data.setCell(70, 3, 7);
+data.setCell(70, 2, 'pom.pageFactory.testRunner.TreeTest_POM')
+data.setCell(70, 3, 9);
 data.setCell(71, 0, 71)
 data.setCell(71, 1, 'OpenHomeURL')
 data.setCell(71, 2, 'pom.pageFactory.testRunner.LoginTest_POM')
-data.setCell(71, 3, 7);
+data.setCell(71, 3, 8);
 data.setCell(72, 0, 72)
-data.setCell(72, 1, 'instantiateDriver')
-data.setCell(72, 2, 'pom.pageFactory.testRunner.GraphTest_POM')
-data.setCell(72, 3, 5);
+data.setCell(72, 1, 'OpenHomeURL')
+data.setCell(72, 2, 'pom.pageFactory.testRunner.ArrayTest_POM')
+data.setCell(72, 3, 7);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'OpenHomeURL')
+data.setCell(73, 2, 'pom.pageFactory.testRunner.StackTest_POM')
+data.setCell(73, 3, 7);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'OpenHomeURL')
+data.setCell(74, 2, 'pom.pageFactory.testRunner.QueueTest_POM')
+data.setCell(74, 3, 7);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -1979,7 +2072,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">49 ignored methods</span>
+            <span class="header-content">50 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -2043,6 +2136,8 @@ return data;
               <span class="ignored-class-name">pom.pageFactory.testRunner.RegistrationTest_POM</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">closeDriver</span>
+                <br/>
+                <span class="ignored-method-name">registerUserPositiveTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -2140,315 +2235,325 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoadAppHome</span>
-                <span class="method-start">4573 ms</span>
+                <span class="method-start">4313 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickGetStarted</span>
-                <span class="method-start">6363 ms</span>
+                <span class="method-start">6153 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickRegisterLink</span>
-                <span class="method-start">8001 ms</span>
+                <span class="method-start">7544 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerUserNegativeTest</span>
-                <span class="method-start">8677 ms</span>
+                <span class="method-name">registerInvalidUserNameTest</span>
+                <span class="method-start">8171 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">registerUserPositiveTest</span>
-                <span class="method-start">9945 ms</span>
+                <span class="method-name">registerPasswordMismatchTest</span>
+                <span class="method-start">9500 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ClickSignOutLink</span>
-                <span class="method-start">11238 ms</span>
+                <span class="method-start">10706 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.LoginTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">12077 ms</span>
+                <span class="method-start">18841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickSignInLink</span>
-                <span class="method-start">12090 ms</span>
+                <span class="method-start">18855 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginNegativeTest</span>
-                <span class="method-start">12704 ms</span>
+                <span class="method-start">19346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginNegativeTest2</span>
+                <span class="method-start">20209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginNegativeTest3</span>
+                <span class="method-start">20629 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UserPositiveTest</span>
-                <span class="method-start">13783 ms</span>
+                <span class="method-start">21484 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.DataStructureTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">15048 ms</span>
+                <span class="method-start">22543 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ClickDSLinkOnHomePage</span>
-                <span class="method-start">15063 ms</span>
+                <span class="method-start">22561 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DataStructureSmokeTest_TimeComplexity</span>
-                <span class="method-start">15902 ms</span>
+                <span class="method-start">23326 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DataStructureSmokeTest_PracticeQuestion</span>
-                <span class="method-start">21527 ms</span>
+                <span class="method-start">28375 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DataStructureSmokeTest_Dropdown</span>
-                <span class="method-start">22165 ms</span>
+                <span class="method-start">29210 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.ArrayTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">23605 ms</span>
+                <span class="method-start">30565 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_WrongInput</span>
-                <span class="method-start">23627 ms</span>
+                <span class="method-start">30577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_ArraysInPython</span>
-                <span class="method-start">27859 ms</span>
+                <span class="method-start">34350 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_ArraysUsingList</span>
-                <span class="method-start">28771 ms</span>
+                <span class="method-start">35024 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_BasicOperations</span>
-                <span class="method-start">31553 ms</span>
+                <span class="method-start">37687 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_ApplicationsOfArrays</span>
-                <span class="method-start">34359 ms</span>
+                <span class="method-start">40477 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_PracticeQuestionsLink</span>
-                <span class="method-start">37049 ms</span>
+                <span class="method-start">43167 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_PracticeQuestion1</span>
-                <span class="method-start">37596 ms</span>
+                <span class="method-start">43797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_PracticeQuestion2</span>
-                <span class="method-start">39203 ms</span>
+                <span class="method-start">45587 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_PracticeQuestion3</span>
-                <span class="method-start">40896 ms</span>
+                <span class="method-start">47094 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_PracticeQuestion4</span>
-                <span class="method-start">42363 ms</span>
+                <span class="method-start">48887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ArrayPage_DropDown_LL</span>
-                <span class="method-start">43978 ms</span>
+                <span class="method-start">51091 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.LinkedListTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">45324 ms</span>
+                <span class="method-start">52306 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">introduction</span>
-                <span class="method-start">45344 ms</span>
+                <span class="method-start">52329 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">create_LinkedList</span>
-                <span class="method-start">48428 ms</span>
+                <span class="method-start">55105 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">typeOfLinkedList</span>
-                <span class="method-start">51306 ms</span>
+                <span class="method-start">57975 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">implementLLInPython</span>
-                <span class="method-start">54430 ms</span>
+                <span class="method-start">61141 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">traversal</span>
-                <span class="method-start">57120 ms</span>
+                <span class="method-start">63807 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deletion</span>
-                <span class="method-start">59983 ms</span>
+                <span class="method-start">66366 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">insertion</span>
-                <span class="method-start">62700 ms</span>
+                <span class="method-start">68953 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LinkedList_PracticeQuestionsLink</span>
-                <span class="method-start">65563 ms</span>
+                <span class="method-start">71605 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LinkedList_DropDown_LL</span>
-                <span class="method-start">66306 ms</span>
+                <span class="method-start">72275 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.StackTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">67285 ms</span>
+                <span class="method-start">73243 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">operations_in_stack</span>
-                <span class="method-start">67295 ms</span>
+                <span class="method-start">73254 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">implementation_stack</span>
-                <span class="method-start">70224 ms</span>
+                <span class="method-start">76218 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">application_stack</span>
-                <span class="method-start">72759 ms</span>
+                <span class="method-start">78598 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">stack_PracticeQuestionsLink</span>
-                <span class="method-start">75086 ms</span>
+                <span class="method-start">80782 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">stack_DropDown</span>
-                <span class="method-start">75794 ms</span>
+                <span class="method-start">81401 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.QueueTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">76754 ms</span>
+                <span class="method-start">82311 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickImplementationQueue</span>
-                <span class="method-start">76778 ms</span>
+                <span class="method-start">82321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickImplementationCollections</span>
-                <span class="method-start">79552 ms</span>
+                <span class="method-start">85116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickImplementationArray</span>
-                <span class="method-start">82001 ms</span>
+                <span class="method-start">87623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickQueueOperations</span>
-                <span class="method-start">84309 ms</span>
+                <span class="method-start">90027 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">queue_PracticeQuestionsLink</span>
-                <span class="method-start">86524 ms</span>
+                <span class="method-start">92401 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">queue_Dropdown</span>
-                <span class="method-start">87205 ms</span>
+                <span class="method-start">93016 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.TreeTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenHomeURL</span>
-                <span class="method-start">88593 ms</span>
+                <span class="method-start">94391 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_OverviewOfTrees</span>
-                <span class="method-start">88609 ms</span>
+                <span class="method-start">94405 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_Terminolgies</span>
-                <span class="method-start">91765 ms</span>
+                <span class="method-start">97282 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_TypesOfTrees</span>
-                <span class="method-start">94459 ms</span>
+                <span class="method-start">100035 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_TreeTraversals</span>
-                <span class="method-start">97150 ms</span>
+                <span class="method-start">102937 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_TraversalIllustration</span>
-                <span class="method-start">100170 ms</span>
+                <span class="method-start">105848 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_TypesOfBinaryTrees</span>
-                <span class="method-start">103338 ms</span>
+                <span class="method-start">109150 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_ImpInPython</span>
-                <span class="method-start">107000 ms</span>
+                <span class="method-start">113901 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_BinaryTreeTravesals</span>
-                <span class="method-start">109895 ms</span>
+                <span class="method-start">117164 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_ImpOfBinaryTrees</span>
-                <span class="method-start">113600 ms</span>
+                <span class="method-start">120310 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_AppOfBinaryTrees</span>
-                <span class="method-start">116511 ms</span>
+                <span class="method-start">123222 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_BinarySearchTrees</span>
-                <span class="method-start">119403 ms</span>
+                <span class="method-start">125970 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_ImpOfBST</span>
-                <span class="method-start">123026 ms</span>
+                <span class="method-start">131053 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tree_PracticeQuestionsLink</span>
-                <span class="method-start">126990 ms</span>
+                <span class="method-start">134611 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tree_Dropdown</span>
-                <span class="method-start">127701 ms</span>
+                <span class="method-start">135342 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">pom.pageFactory.testRunner.GraphTest_POM</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">instantiateDriver</span>
-                <span class="method-start">128672 ms</span>
+                <span class="method-start">136404 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_graphLink_wrongText</span>
-                <span class="method-start">128683 ms</span>
+                <span class="method-start">136416 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_graph_link</span>
-                <span class="method-start">131683 ms</span>
+                <span class="method-start">139339 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_graph_representation</span>
-                <span class="method-start">134190 ms</span>
+                <span class="method-start">141687 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">click_graph_practice_questions</span>
-                <span class="method-start">137435 ms</span>
+                <span class="method-start">144695 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">graphPage_ClickSignOut</span>
-                <span class="method-start">138136 ms</span>
+                <span class="method-start">145352 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">138919 ms</span>
+                <span class="method-start">146151 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

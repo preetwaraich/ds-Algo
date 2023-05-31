@@ -54,20 +54,28 @@ public class RegistrationTest_POM {
 
 	}
 	
-	
-	@Test(groups= {"Smoke","Page"},priority = 5)
-	public void registerUserNegativeTest() {
+
+	@Test(groups= {"Smoke","Page"},priority = 6)
+	public void registerInvalidUserNameTest() {
 		rp = new RegisterPage(driver);
-		rp.enterUsername(ConfigReader.getStringValue("wrong_user_name"));
-		rp.enterPassword(ConfigReader.getStringValue("password"));
-		rp.enterconfirmPassword(ConfigReader.getStringValue("password"));
+		rp.enterUsername(ConfigReader.getStringValue("reg_invalid_Username"));
+		rp.enterPassword(ConfigReader.getStringValue("reg_valid_Password"));
+		rp.enterconfirmPassword(ConfigReader.getStringValue("reg_valid_Password"));
 		rp.clickRegisterButton();
 		System.out.println(rp.getErrorMsg());
 	}
-
 	
-		
 	@Test(groups= {"Smoke","Page"},priority = 7)
+	public void registerPasswordMismatchTest() {
+		rp = new RegisterPage(driver);
+		rp.enterUsername(ConfigReader.getStringValue("username"));
+		rp.enterPassword(ConfigReader.getStringValue("password"));
+		rp.enterconfirmPassword(ConfigReader.getStringValue("mismatchedPassword"));
+		rp.clickRegisterButton();
+		System.out.println(rp.getErrorMsg());
+	}
+		
+	@Test(groups= {"Page"},priority = 8)
 	public void registerUserPositiveTest() {
 
 		rp = new RegisterPage(driver);
@@ -80,7 +88,7 @@ public class RegistrationTest_POM {
 	}
 	
 	
-	@Test(groups= {"Smoke","Page"},priority = 9)
+	@Test(groups= {"Page"},priority = 9)
 	public void ClickSignOutLink() {
 		hp = new HomePage(driver);
 		hp.clickSignOutLink();

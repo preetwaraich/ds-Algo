@@ -54,16 +54,34 @@ public class LoginTest_POM {
 	@Test(groups= {"Smoke","Page"},priority = 5)
 	public void LoginNegativeTest() {
 		sip = new SignInPage(driver);
-		sip.enterUsername(ConfigReader.getStringValue("wrong_user_name"));
+		sip.enterUsername(ConfigReader.getStringValue("invalid_user_name"));
 		sip.enterPassword(ConfigReader.getStringValue("password"));
 		sip.clickLogin();
 
 		System.out.println(sip.getErrorMsg());
 	}
 
-
-
 	@Test(groups= {"Smoke","Page"},priority = 6)
+	public void LoginNegativeTest2() {
+		sip = new SignInPage(driver);
+		sip.enterUsername(ConfigReader.getStringValue("empty_user_name2"));
+		sip.enterPassword(ConfigReader.getStringValue("password"));
+		sip.clickLogin();
+
+		System.out.println(sip.getErrorMsg());
+	}
+
+	@Test(groups= {"Smoke","Page"},priority = 7)
+	public void LoginNegativeTest3() {
+		sip = new SignInPage(driver);
+		sip.enterUsername(ConfigReader.getStringValue("username"));
+		sip.enterPassword(ConfigReader.getStringValue("wrong_password"));
+		sip.clickLogin();
+
+		System.out.println(sip.getErrorMsg());
+	}
+
+	@Test(groups= {"Smoke","Page"},priority = 8)
 	public void UserPositiveTest() {
 
 		sip = new SignInPage(driver);

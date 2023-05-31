@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pom.driverFactory.pageFactory.testRunner.RegistrationTest_POM">
+      <class name="pom.pageFactory.testRunner.RegistrationTest_POM">
         <methods>
-          <include name="registerUserError"/>
+          <include name="ClickSignOutLink"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- pom.driverFactory.pageFactory.testRunner.RegistrationTest_POM -->
+      </class> <!-- pom.pageFactory.testRunner.RegistrationTest_POM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
